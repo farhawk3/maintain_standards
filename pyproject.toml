@@ -16,3 +16,8 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/farhawk3/maintain_standards"
 Issues = "https://github.com/farhawk3/maintain_standards/issues"
+
+[project.optional-dependencies]
+dev = [
+    "black>=24.4.2",
+]

@@ -26,6 +26,3 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# VS Code
-.vscode/
