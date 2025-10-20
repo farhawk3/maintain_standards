@@ -20,4 +20,13 @@ Issues = "https://github.com/farhawk3/maintain_standards/issues"
 [project.optional-dependencies]
 dev = [
     "black>=24.4.2",
+    "ruff>=0.5.5",
 ]
+
+[tool.ruff]
+# Same as black.
+line-length = 88
+
+[tool.ruff.lint]
+# Enable Pyflakes (`F`), pycodestyle (`E`, `W`), and isort (`I`) rules.
+select = ["E", "F", "I", "W"]
