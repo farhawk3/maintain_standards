@@ -12,6 +12,10 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+    "streamlit",
+    "pandas",
+]
 
 [project.urls]
 Homepage = "https://github.com/farhawk3/maintain_standards"
