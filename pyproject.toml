@@ -13,7 +13,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "streamlit",
+    "streamlit==1.50.0",
     "pandas",
 ]
 
@@ -35,3 +35,7 @@ line-length = 88
 [tool.ruff.lint]
 # Enable Pyflakes (`F`), pycodestyle (`E`, `W`), and isort (`I`) rules.
 select = ["E", "F", "I", "W"]
+
+[tool.setuptools.packages.find]
+include = ["standards_library"]
+namespaces = false

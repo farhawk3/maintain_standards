@@ -145,13 +145,6 @@ class LibraryValidator:
                     std.id,
                     "Missing property_rationale (MAC value > 0.1)"
                 ))
-            
-            if not rat.overall_rationale.strip():
-                self.errors.append(ValidationError(
-                    "warning",
-                    std.id,
-                    "Missing overall_rationale"
-                ))
     
     def has_errors(self) -> bool:
         """Check if there are any errors (not warnings)"""

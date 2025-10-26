@@ -1,6 +1,6 @@
 {
   "version": "2.7",
-  "last_modified": "2025-10-25T16:10:30.917308",
+  "exported": "2025-10-21T22:28:45.731598",
   "clusters": [
     {
       "id": "ENH",
@@ -117,17 +117,17 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.25) \\- Strong**: The family is the prototypical in-group to which loyalty is owed. This standard extends the powerful, primal instinct for kinship solidarity to a wider social or professional group, treating teammates as \"family.\"  ",
-        "group_rationale": "* **Group (0.65) \\- Dominant**: This standard is the quintessential expression of the **Group** dimension. It directly addresses the core cooperation problem of forming and maintaining cohesive, loyal coalitions that can outperform rival groups.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.10) \\- Present**: Loyalty is a form of long-term, generalized **reciprocity** among group members. It's an implicit promise to support others in the group with the expectation that they will do the same for you.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: The focus is on collective well-being and solidarity, not on individual status or dominance. It's about \"us,\" not \"me.\"  ",
-        "deference_rationale": "* **Deference (0.00) \\- None**: Loyalty is often to one's peers within the group, not necessarily to a leader or a formal hierarchy.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: In-group loyalty is fundamentally about being partial and biased. It often stands in direct conflict with the principle of impartial fairness, as it mandates prioritizing the needs of the in-group over outsiders.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: This standard is entirely unrelated to the concept of ownership.",
-        "overall_rationale": "\n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.25) \\- Strong**: The family is the prototypical in-group to which loyalty is owed. This standard extends the powerful, primal instinct for kinship solidarity to a wider social or professional group, treating teammates as \"family.\"  \n* **Group (0.65) \\- Dominant**: This standard is the quintessential expression of the **Group** dimension. It directly addresses the core cooperation problem of forming and maintaining cohesive, loyal coalitions that can outperform rival groups.  \n* **Reciprocity (0.10) \\- Present**: Loyalty is a form of long-term, generalized **reciprocity** among group members. It's an implicit promise to support others in the group with the expectation that they will do the same for you.  \n* **Heroism (0.00) \\- None**: The focus is on collective well-being and solidarity, not on individual status or dominance. It's about \"us,\" not \"me.\"  \n* **Deference (0.00) \\- None**: Loyalty is often to one's peers within the group, not necessarily to a leader or a formal hierarchy.  \n* **Fairness (0.00) \\- None**: In-group loyalty is fundamentally about being partial and biased. It often stands in direct conflict with the principle of impartial fairness, as it mandates prioritizing the needs of the in-group over outsiders.  \n* **Property (0.00) \\- None**: This standard is entirely unrelated to the concept of ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-21"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "CCG-2",
@@ -148,20 +148,21 @@
       "secondary_focus": "State/Event",
       "impacted_emotions": [
         "Praiseworthiness",
-        "Social Impact"
+        "Social Impact",
+        "Consequence"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.10) \\- Present**: The duty to care for the welfare of one's family is a specific, high-stakes version of this broader communitarian principle.  ",
-        "group_rationale": "* **Group (0.55) \\- Dominant**: This standard directly addresses the central tension that the **Group** dimension evolved to manage: suppressing individual selfishness for The benefit of collective action and long-term community welfare.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.10) \\- Present**: Contributing to the common good is part of an implicit social contract, a form of **reciprocity** where one contributes to public resources (like safety or cleanliness) in exchange for the benefits of living in a thriving community.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: The focus is on duty and collective benefit, not on individual glory or status.  ",
-        "deference_rationale": "* **Deference (0.15) \\- Present**: This standard requires **deference** to the needs of the community, submitting one's own immediate self-interest to a higher, collective good.  \n",
-        "fairness_rationale": "* **Fairness (0.10) \\- Present**: There is an element of **fairness** here, suggesting that it's unfair for an individual to reap the benefits of a community without contributing their \"fair share\" to its well-being.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.10) \\- Present**: The duty to care for the welfare of one's family is a specific, high-stakes version of this broader communitarian principle.  \n* **Group (0.55) \\- Dominant**: This standard directly addresses the central tension that the **Group** dimension evolved to manage: suppressing individual selfishness for The benefit of collective action and long-term community welfare.  \n* **Reciprocity (0.10) \\- Present**: Contributing to the common good is part of an implicit social contract, a form of **reciprocity** where one contributes to public resources (like safety or cleanliness) in exchange for the benefits of living in a thriving community.  \n* **Heroism (0.00) \\- None**: The focus is on duty and collective benefit, not on individual glory or status.  \n* **Deference (0.15) \\- Present**: This standard requires **deference** to the needs of the community, submitting one's own immediate self-interest to a higher, collective good.  \n* **Fairness (0.10) \\- Present**: There is an element of **fairness** here, suggesting that it's unfair for an individual to reap the benefits of a community without contributing their \"fair share\" to its well-being.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-21"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "CCG-3",
@@ -186,17 +187,17 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.05) \\- Minimal**: While families have reputations, this standard is more focused on larger social or professional groups where public perception is critical.  ",
-        "group_rationale": "* **Group (0.60) \\- Dominant**: A group's reputation is a critical asset in inter-group competition. A good reputation attracts allies and resources, while a bad one invites conflict and ostracism. This standard reflects the duty to protect that collective asset.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.15) \\- Present**: A good reputation is essential for being seen as a trustworthy partner for **reciprocal** exchanges with other groups or individuals.  ",
-        "heroism_rationale": "* **Heroism (0.15) \\- Present**: Actions that bring honor and prestige to the group are a form of high-status, **heroic** display. The individual gains status by enhancing the status of their group.",
-        "deference_rationale": "* **Deference (0.05) \\- Minimal**: The focus is on the group's external standing, not on internal hierarchies.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: Reputation management is about perception and public relations, which often has little to do with impartial fairness.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": "  \n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.05) \\- Minimal**: While families have reputations, this standard is more focused on larger social or professional groups where public perception is critical.  \n* **Group (0.60) \\- Dominant**: A group's reputation is a critical asset in inter-group competition. A good reputation attracts allies and resources, while a bad one invites conflict and ostracism. This standard reflects the duty to protect that collective asset.  \n* **Reciprocity (0.15) \\- Present**: A good reputation is essential for being seen as a trustworthy partner for **reciprocal** exchanges with other groups or individuals.  \n* **Heroism (0.15) \\- Present**: Actions that bring honor and prestige to the group are a form of high-status, **heroic** display. The individual gains status by enhancing the status of their group.  \n* **Deference (0.05) \\- Minimal**: The focus is on the group's external standing, not on internal hierarchies.  \n* **Fairness (0.00) \\- None**: Reputation management is about perception and public relations, which often has little to do with impartial fairness.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-21"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "CD-1",
@@ -216,21 +217,22 @@
       "primary_focus": "Action",
       "secondary_focus": "State/Event",
       "impacted_emotions": [
+        "Praiseworthy",
         "Agency",
         "Valence"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.05) \\- Minimal**: While achievement can benefit one's family, the core motivation described here is about personal competence, not caregiving.  ",
-        "group_rationale": "* **Group (0.20) \\- Strong**: High-achieving individuals are valuable assets to any **group**, bringing in resources, elevating the group's status, and solving collective problems.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.10) \\- Present**: Demonstrating competence makes one a more desirable partner for **reciprocal** exchanges and alliances.  ",
-        "heroism_rationale": "* **Heroism (0.45) \\- Dominant**: The drive to achieve challenging goals and demonstrate superior competence is the very essence of the **Heroism** dimension. It is a classic hawk-like, status-seeking display of individual prowess.  ",
-        "deference_rationale": "* **Deference (0.15) \\- Present**: This standard involves a form of **deference** to an ideal of excellence. The drive to achieve is often a response to a high standard that one is trying to meet.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: The drive for personal achievement is about competition and individual success, which is distinct from the egalitarian principle of fairness.  ",
-        "property_rationale": "* **Property (0.05) \\- Minimal**: The pursuit of achievement is often linked to the acquisition of resources and **property**, which serve as tangible markers of success and competence.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.05) \\- Minimal**: While achievement can benefit one's family, the core motivation described here is about personal competence, not caregiving.  \n* **Group (0.20) \\- Strong**: High-achieving individuals are valuable assets to any **group**, bringing in resources, elevating the group's status, and solving collective problems.  \n* **Reciprocity (0.10) \\- Present**: Demonstrating competence makes one a more desirable partner for **reciprocal** exchanges and alliances.  \n* **Heroism (0.45) \\- Dominant**: The drive to achieve challenging goals and demonstrate superior competence is the very essence of the **Heroism** dimension. It is a classic hawk-like, status-seeking display of individual prowess.  \n* **Deference (0.15) \\- Present**: This standard involves a form of **deference** to an ideal of excellence. The drive to achieve is often a response to a high standard that one is trying to meet.  \n* **Fairness (0.00) \\- None**: The drive for personal achievement is about competition and individual success, which is distinct from the egalitarian principle of fairness.  \n* **Property (0.05) \\- Minimal**: The pursuit of achievement is often linked to the acquisition of resources and **property**, which serve as tangible markers of success and competence."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-21"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "CD-2",
@@ -250,21 +252,22 @@
       "primary_focus": "Action",
       "secondary_focus": "Object/Concept",
       "impacted_emotions": [
+        "Praiseworthy",
         "Agency",
         "Expectation"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.05) \\- Minimal**: While one can be professional in a family business, the concept is primarily about one's role in a broader social or economic context.  ",
-        "group_rationale": "* **Group (0.25) \\- Strong**: A team of diligent professionals is far more effective and reliable. This standard is crucial for the functioning of any high-performing **group**.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.45) \\- Dominant**: Professionalism is a cornerstone of **Reciprocity** in any service-based exchange. The client or employer pays for a service with the trusted expectation that the provider is competent and diligent. Negligence is a severe violation of this trust.  ",
-        "heroism_rationale": "* **Heroism (0.05) \\- Minimal**: While a professional can be a \"hero,\" the core of this standard is about duty, diligence, and reliability, not displays of status.  ",
-        "deference_rationale": "* **Deference (0.20) \\- Strong**: This standard requires **deference** to professional codes of conduct, the expectations of one's role, and the standards of one's field.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: This is about fulfilling a specific role competently, not about impartiality.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.05) \\- Minimal**: While one can be professional in a family business, the concept is primarily about one's role in a broader social or economic context.  \n* **Group (0.25) \\- Strong**: A team of diligent professionals is far more effective and reliable. This standard is crucial for the functioning of any high-performing **group**.  \n* **Reciprocity (0.45) \\- Dominant**: Professionalism is a cornerstone of **Reciprocity** in any service-based exchange. The client or employer pays for a service with the trusted expectation that the provider is competent and diligent. Negligence is a severe violation of this trust.  \n* **Heroism (0.05) \\- Minimal**: While a professional can be a \"hero,\" the core of this standard is about duty, diligence, and reliability, not displays of status.  \n* **Deference (0.20) \\- Strong**: This standard requires **deference** to professional codes of conduct, the expectations of one's role, and the standards of one's field.  \n* **Fairness (0.00) \\- None**: This is about fulfilling a specific role competently, not about impartiality.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-21"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "CD-3",
@@ -290,17 +293,17 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.50) \\- Dominant**: This is the operationalization of the core **Family/Care** imperative: \"first, do no harm.\" The fundamental duty to prevent harm, even if unintended, stems from the need to protect vulnerable individuals.  ",
-        "group_rationale": "* **Group (0.20) \\- Strong**: An agent that is not secure is a liability to its entire **group**, potentially exposing everyone to external threats. Maintaining security is a core duty for any responsible group member.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.10) \\- Present**: A user trusts an agent to be a safe and reliable partner. Part of this **reciprocal** agreement is the agent's diligence in maintaining its own operational security.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: This is a defensive, cautious, and preventative standard, the opposite of the risk-taking nature of Heroism.  ",
-        "deference_rationale": "* **Deference (0.20) \\- Strong**: This requires **deference** to safety protocols, best practices, and the principle of caution. It is a form of submission to the importance of preventing negative outcomes.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: Unrelated to impartiality.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.50) \\- Dominant**: This is the operationalization of the core **Family/Care** imperative: \"first, do no harm.\" The fundamental duty to prevent harm, even if unintended, stems from the need to protect vulnerable individuals.  \n* **Group (0.20) \\- Strong**: An agent that is not secure is a liability to its entire **group**, potentially exposing everyone to external threats. Maintaining security is a core duty for any responsible group member.  \n* **Reciprocity (0.10) \\- Present**: A user trusts an agent to be a safe and reliable partner. Part of this **reciprocal** agreement is the agent's diligence in maintaining its own operational security.  \n* **Heroism (0.00) \\- None**: This is a defensive, cautious, and preventative standard, the opposite of the risk-taking nature of Heroism.  \n* **Deference (0.20) \\- Strong**: This requires **deference** to safety protocols, best practices, and the principle of caution. It is a form of submission to the importance of preventing negative outcomes.  \n* **Fairness (0.00) \\- None**: Unrelated to impartiality.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-21"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "CD-4",
@@ -326,17 +329,17 @@
         "Belonging"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.40) \\- Dominant**: A core aspect of a loving and supportive **family** is creating a safe haven where members can be vulnerable, express themselves, and make mistakes without fear of harsh judgment.  ",
-        "group_rationale": "* **Group (0.40) \\- Dominant**: Psychological safety is a well-established prerequisite for high-performing **groups**. It fosters the trust, open communication, and creativity necessary for effective teamwork and innovation.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.15) \\- Present**: Creating a safe environment is a **reciprocal** act. By making others feel safe to be open with you, you build the trust that allows them to do the same for you in  return.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: Creating a climate of fear is a tactic of dominance. This standard is the direct opposite, focusing on harmony and trust rather than status.  ",
-        "deference_rationale": "* **Deference (0.05) \\- Minimal**: While a leader might foster this, the state of psychological safety is a collective property of the group, not a function of hierarchy.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: Unrelated to impartiality.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": "\n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.40) \\- Dominant**: A core aspect of a loving and supportive **family** is creating a safe haven where members can be vulnerable, express themselves, and make mistakes without fear of harsh judgment.  \n* **Group (0.40) \\- Dominant**: Psychological safety is a well-established prerequisite for high-performing **groups**. It fosters the trust, open communication, and creativity necessary for effective teamwork and innovation.  \n* **Reciprocity (0.15) \\- Present**: Creating a safe environment is a **reciprocal** act. By making others feel safe to be open with you, you build the trust that allows them to do the same for you in  return.  \n* **Heroism (0.00) \\- None**: Creating a climate of fear is a tactic of dominance. This standard is the direct opposite, focusing on harmony and trust rather than status.  \n* **Deference (0.05) \\- Minimal**: While a leader might foster this, the state of psychological safety is a collective property of the group, not a function of hierarchy.  \n* **Fairness (0.00) \\- None**: Unrelated to impartiality.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-21"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "CI-1",
@@ -360,17 +363,17 @@
         "Agency"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.00) \\- None**: This is an abstract intellectual principle, unrelated to the morality of care and kinship.  ",
-        "group_rationale": "* **Group (0.10) \\- Present**: A group that bases its collective decisions on evidence and sound logic is more likely to be successful and stable in the long run.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.25) \\- Strong**: Honest, good-faith reasoning is a form of **reciprocity** in conversation and debate. You owe your partner a commitment to follow the evidence, just as they owe it to you.  ",
-        "heroism_rationale": "* **Heroism (0.05) \\- Minimal**: While intellectually dominating an argument could be seen as a display of prowess, the core of this standard is about process and truth-seeking, not status.  ",
-        "deference_rationale": "* **Deference (0.30) \\- Dominant**: This standard requires **deference** to a higher authority: the evidence and the rules of logic. It mandates submitting one's own biases and pre-existing beliefs to the impartial judgment of facts.  ",
-        "fairness_rationale": "* **Fairness (0.30) \\- Dominant**: A core component of this standard is giving a \"fair hearing\" to all evidence, even that which contradicts one's own position. It ensures a just and equitable process of belief formation.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.00) \\- None**: This is an abstract intellectual principle, unrelated to the morality of care and kinship.  \n* **Group (0.10) \\- Present**: A group that bases its collective decisions on evidence and sound logic is more likely to be successful and stable in the long run.  \n* **Reciprocity (0.25) \\- Strong**: Honest, good-faith reasoning is a form of **reciprocity** in conversation and debate. You owe your partner a commitment to follow the evidence, just as they owe it to you.  \n* **Heroism (0.05) \\- Minimal**: While intellectually dominating an argument could be seen as a display of prowess, the core of this standard is about process and truth-seeking, not status.  \n* **Deference (0.30) \\- Dominant**: This standard requires **deference** to a higher authority: the evidence and the rules of logic. It mandates submitting one's own biases and pre-existing beliefs to the impartial judgment of facts.  \n* **Fairness (0.30) \\- Dominant**: A core component of this standard is giving a \"fair hearing\" to all evidence, even that which contradicts one's own position. It ensures a just and equitable process of belief formation.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-21"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "CI-2",
@@ -395,17 +398,17 @@
         "Valence"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.00) \\- None**: Impartiality requires actively suppressing the natural bias to favor one's kin, making it antithetical to this dimension.  ",
-        "group_rationale": "* **Group (0.05) \\- Minimal**: This standard also works against the powerful in-group biases that are central to the Group dimension.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.10) \\- Present**: Resisting self-interest in judgment is crucial for being a trustworthy partner in any cooperative venture.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: The goal is to eliminate personal bias and pressure, not to assert individual dominance.  ",
-        "deference_rationale": "* **Deference (0.20) \\- Strong**: This standard requires **deference** to the abstract principle of justice over the immediate pressures of self-interest or social influence.  ",
-        "fairness_rationale": "* **Fairness (0.65) \\- Dominant**: This is the very essence of the **Fairness** dimension applied to the internal process of judgment. It is the active, vigilant work required to achieve the state of impartiality described in the Justice & Equity cluster.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": "\n\n\n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.00) \\- None**: Impartiality requires actively suppressing the natural bias to favor one's kin, making it antithetical to this dimension.  \n* **Group (0.05) \\- Minimal**: This standard also works against the powerful in-group biases that are central to the Group dimension.  \n* **Reciprocity (0.10) \\- Present**: Resisting self-interest in judgment is crucial for being a trustworthy partner in any cooperative venture.  \n* **Heroism (0.00) \\- None**: The goal is to eliminate personal bias and pressure, not to assert individual dominance.  \n* **Deference (0.20) \\- Strong**: This standard requires **deference** to the abstract principle of justice over the immediate pressures of self-interest or social influence.  \n* **Fairness (0.65) \\- Dominant**: This is the very essence of the **Fairness** dimension applied to the internal process of judgment. It is the active, vigilant work required to achieve the state of impartiality described in the Justice & Equity cluster.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-21"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "CI-3",
@@ -430,17 +433,17 @@
         "Expectation"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.05) \\- Minimal**: Not a specific focus of kinship morality.  ",
-        "group_rationale": "* **Group (0.15) \\- Present**: An individual who is aware of their own fallibility is a more reliable and less dangerous member of a decision-making group, reducing the risk of costly collective errors.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.20) \\- Strong**: Acknowledging uncertainty is an act of intellectual honesty that is crucial for building trust. It signals to a cooperative partner that you are a reliable source of information, willing to represent your knowledge accurately.  \n",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: This is the direct opposite of intellectual arrogance and the hawkish displays of absolute certainty that are often used to signal status.  ",
-        "deference_rationale": "* **Deference (0.55) \\- Dominant**: This is a classic dove-like intellectual stance. It represents **deference** to the complexity of the world, the possibility of being wrong, and the authority of evidence that may not yet have been seen.  ",
-        "fairness_rationale": "* **Fairness (0.05) \\- Minimal**: While related to being fair to other viewpoints, the core of this standard is the internal state of humility, not the external act of impartiality.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": "\n\n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.05) \\- Minimal**: Not a specific focus of kinship morality.  \n* **Group (0.15) \\- Present**: An individual who is aware of their own fallibility is a more reliable and less dangerous member of a decision-making group, reducing the risk of costly collective errors.  \n* **Reciprocity (0.20) \\- Strong**: Acknowledging uncertainty is an act of intellectual honesty that is crucial for building trust. It signals to a cooperative partner that you are a reliable source of information, willing to represent your knowledge accurately.  \n* **Heroism (0.00) \\- None**: This is the direct opposite of intellectual arrogance and the hawkish displays of absolute certainty that are often used to signal status.  \n* **Deference (0.55) \\- Dominant**: This is a classic dove-like intellectual stance. It represents **deference** to the complexity of the world, the possibility of being wrong, and the authority of evidence that may not yet have been seen.  \n* **Fairness (0.05) \\- Minimal**: While related to being fair to other viewpoints, the core of this standard is the internal state of humility, not the external act of impartiality.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-21"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "ENH-1",
@@ -465,17 +468,17 @@
         "Arousal"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.75) \\- Dominant**: This is the raw, emotional core of the **Family/Care** dimension. The powerful, intuitive aversion to seeing another being in pain is the fundamental evolutionary mechanism that drives the protection of vulnerable kin.  ",
-        "group_rationale": "* **Group (0.05) \\- Minimal**: The aversion to suffering is a general disposition, not specifically tied to in-group loyalty, although suffering of an in-group member may elicit a stronger response.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.05) \\- Minimal**: This is a pre-rational, emotional reaction, not a calculated judgment based on social exchange or the expectation of repayment.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: This is a compassionate, protective impulse, which is the antithesis of the dominant, status-seeking displays of Heroism.  ",
-        "deference_rationale": "* **Deference (0.05) \\- Minimal**: The emotional aversion to suffering is independent of social hierarchy or submission to authority.  ",
-        "fairness_rationale": "* **Fairness (0.10) \\- Present**: Causing suffering can be seen as a violation of impartiality and a profound injustice, linking this intuitive aversion to the foundations of **Fairness**.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: While causing suffering can violate bodily autonomy (related to self-ownership), the core standard is about the emotional reaction to the suffering itself, not the concept of ownership.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.75) \\- Dominant**: This is the raw, emotional core of the **Family/Care** dimension. The powerful, intuitive aversion to seeing another being in pain is the fundamental evolutionary mechanism that drives the protection of vulnerable kin.  \n* **Group (0.05) \\- Minimal**: The aversion to suffering is a general disposition, not specifically tied to in-group loyalty, although suffering of an in-group member may elicit a stronger response.  \n* **Reciprocity (0.05) \\- Minimal**: This is a pre-rational, emotional reaction, not a calculated judgment based on social exchange or the expectation of repayment.  \n* **Heroism (0.00) \\- None**: This is a compassionate, protective impulse, which is the antithesis of the dominant, status-seeking displays of Heroism.  \n* **Deference (0.05) \\- Minimal**: The emotional aversion to suffering is independent of social hierarchy or submission to authority.  \n* **Fairness (0.10) \\- Present**: Causing suffering can be seen as a violation of impartiality and a profound injustice, linking this intuitive aversion to the foundations of **Fairness**.  \n* **Property (0.00) \\- None**: While causing suffering can violate bodily autonomy (related to self-ownership), the core standard is about the emotional reaction to the suffering itself, not the concept of ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-22"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "ENH-2",
@@ -500,17 +503,17 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.60) \\- Dominant**: This standard is the behavioral expression of Empathic Aversion (ENH-1). It is the core of **Family/Care** morality: the active drive to protect vulnerable kin from threats.  ",
-        "group_rationale": "* **Group (0.20) \\- Strong**: Protecting the vulnerable members of a **group** (like children or the elderly) strengthens the group's overall cohesion, fosters loyalty, and ensures its long-term survival.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.05) \\- Minimal**: The protective impulse is typically unconditional and directed at those who cannot reciprocate, not an exchange-based action expecting a return.  ",
-        "heroism_rationale": "* **Heroism (0.15) \\- Present**: Actively defending the vulnerable, especially at personal risk, is a classic and highly-valued **heroic** display of strength and commitment.  ",
-        "deference_rationale": "* **Deference (0.00) \\- None**: This standard is about taking an active, dominant role to protect the weak, not about submitting to authority.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: The impulse to protect is a biased one, prioritizing the safety of the vulnerable over impartial treatment.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: The focus is on preventing physical harm, not on protecting possessions.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.60) \\- Dominant**: This standard is the behavioral expression of Empathic Aversion (ENH-1). It is the core of **Family/Care** morality: the active drive to protect vulnerable kin from threats.  \n* **Group (0.20) \\- Strong**: Protecting the vulnerable members of a **group** (like children or the elderly) strengthens the group's overall cohesion, fosters loyalty, and ensures its long-term survival.  \n* **Reciprocity (0.05) \\- Minimal**: The protective impulse is typically unconditional and directed at those who cannot reciprocate, not an exchange-based action expecting a return.  \n* **Heroism (0.15) \\- Present**: Actively defending the vulnerable, especially at personal risk, is a classic and highly-valued **heroic** display of strength and commitment.  \n* **Deference (0.00) \\- None**: This standard is about taking an active, dominant role to protect the weak, not about submitting to authority.  \n* **Fairness (0.00) \\- None**: The impulse to protect is a biased one, prioritizing the safety of the vulnerable over impartial treatment.  \n* **Property (0.00) \\- None**: The focus is on preventing physical harm, not on protecting possessions."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-21"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "ENH-3",
@@ -534,17 +537,17 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.30) \\- Dominant**: The duty to not cause harm is a rational, universalized extension of the innate aversion to seeing kin suffer. It takes the core emotional impulse of **Family/Care** and transforms it into a formal rule.  ",
-        "group_rationale": "* **Group (0.10) \\- Present**: A baseline rule to avoid harming others is a prerequisite for any stable and cooperative group.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.15) \\- Present**: The expectation that neither party will cause harm is a fundamental precondition for any trusted, **reciprocal** social exchange.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: This is a duty to refrain from action, not a hawkish display of dominance.  ",
-        "deference_rationale": "* **Deference (0.05) \\- Minimal**: The duty is universal and not dependent on rank or status.  ",
-        "fairness_rationale": "* **Fairness (0.35) \\- Dominant**: The concept of *\"unjust\"* harm is central to this standard. This moves beyond a simple aversion to harm and engages the deliberative, principled logic of **Fairness**, which is concerned with justice, rights, and impartiality.  ",
-        "property_rationale": "* **Property (0.05) \\- Minimal**: While causing harm can violate self-ownership, the core of this standard is the formal duty itself, not the concept of property.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.30) \\- Dominant**: The duty to not cause harm is a rational, universalized extension of the innate aversion to seeing kin suffer. It takes the core emotional impulse of **Family/Care** and transforms it into a formal rule.  \n* **Group (0.10) \\- Present**: A baseline rule to avoid harming others is a prerequisite for any stable and cooperative group.  \n* **Reciprocity (0.15) \\- Present**: The expectation that neither party will cause harm is a fundamental precondition for any trusted, **reciprocal** social exchange.  \n* **Heroism (0.00) \\- None**: This is a duty to refrain from action, not a hawkish display of dominance.  \n* **Deference (0.05) \\- Minimal**: The duty is universal and not dependent on rank or status.  \n* **Fairness (0.35) \\- Dominant**: The concept of *\"unjust\"* harm is central to this standard. This moves beyond a simple aversion to harm and engages the deliberative, principled logic of **Fairness**, which is concerned with justice, rights, and impartiality.  \n* **Property (0.05) \\- Minimal**: While causing harm can violate self-ownership, the core of this standard is the formal duty itself, not the concept of property."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-21"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "ENH-4",
@@ -570,17 +573,17 @@
         "Intentionality"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.45) \\- Dominant**: An internal disposition of genuine care and a sincere intention to avoid harm is the psychological foundation of **Family** morality. This standard judges the internal state from which protective actions spring.  ",
-        "group_rationale": "* **Group (0.20) \\- Strong**: A non-harming disposition fosters the generalized trust and psychological safety necessary for a **group** to be cohesive and cooperative.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.15) \\- Present**: To be a truly trustworthy partner for **reciprocal** exchange, one must not only act correctly but must also be free from ill-will. This standard appraises that underlying good faith.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: The focus is on a peaceful internal state, not an external display of power.  ",
-        "deference_rationale": "* **Deference (0.20) \\- Strong**: Cultivating a peaceful, non-harming disposition is a key component of a \"dove-like\" social strategy. It requires the self-control to **defer** one's aggressive impulses to a higher principle of harmony. ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: The focus is on the internal disposition of care, not the external principle of impartiality.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": " \n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.45) \\- Dominant**: An internal disposition of genuine care and a sincere intention to avoid harm is the psychological foundation of **Family** morality. This standard judges the internal state from which protective actions spring.  \n* **Group (0.20) \\- Strong**: A non-harming disposition fosters the generalized trust and psychological safety necessary for a **group** to be cohesive and cooperative.  \n* **Reciprocity (0.15) \\- Present**: To be a truly trustworthy partner for **reciprocal** exchange, one must not only act correctly but must also be free from ill-will. This standard appraises that underlying good faith.  \n* **Heroism (0.00) \\- None**: The focus is on a peaceful internal state, not an external display of power.  \n* **Deference (0.20) \\- Strong**: Cultivating a peaceful, non-harming disposition is a key component of a \"dove-like\" social strategy. It requires the self-control to **defer** one's aggressive impulses to a higher principle of harmony.  \n* **Fairness (0.00) \\- None**: The focus is on the internal disposition of care, not the external principle of impartiality.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-21"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "ES-1",
@@ -605,17 +608,17 @@
         "Prospect"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.65) \\- Dominant**: This is the ultimate extension of the **Family/Care** morality. It takes the powerful instinct to care for one's own children and projects it forward in time, treating all future generations as one's own distant kin to whom a profound duty of care is owed.  ",
-        "group_rationale": "* **Group (0.25) \\- Strong**: This standard represents a concern for the long-term survival and flourishing of the ultimate in-**group**: humanity itself. It requires prioritizing the group's future welfare over the present generation's immediate gratification.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.05) \\- Minimal**: The reciprocity is highly abstract and one-way. We owe a duty to future generations, but they cannot \"pay us back,\" making this a principle of stewardship rather than exchange.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: The focus is on long-term, collective care and preservation, not on individual status or dominance. ",
-        "deference_rationale": "* **Deference (0.05) \\- Minimal**: It's not primarily about submitting to an existing authority but about taking responsibility for those who do not yet exist.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: While related to \"intergenerational fairness,\" the core moral driver is the emotion of care and the duty to provide, which is a **Family**\\-based intuition.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: This standard treats the future as a commons to be stewarded and passed on, not a property to be owned or exploited by the present generation.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.65) \\- Dominant**: This is the ultimate extension of the **Family/Care** morality. It takes the powerful instinct to care for one's own children and projects it forward in time, treating all future generations as one's own distant kin to whom a profound duty of care is owed.  \n* **Group (0.25) \\- Strong**: This standard represents a concern for the long-term survival and flourishing of the ultimate in-**group**: humanity itself. It requires prioritizing the group's future welfare over the present generation's immediate gratification.  \n* **Reciprocity (0.05) \\- Minimal**: The reciprocity is highly abstract and one-way. We owe a duty to future generations, but they cannot \"pay us back,\" making this a principle of stewardship rather than exchange.  \n* **Heroism (0.00) \\- None**: The focus is on long-term, collective care and preservation, not on individual status or dominance.  \n* **Deference (0.05) \\- Minimal**: It's not primarily about submitting to an existing authority but about taking responsibility for those who do not yet exist.  \n* **Fairness (0.00) \\- None**: While related to \"intergenerational fairness,\" the core moral driver is the emotion of care and the duty to provide, which is a **Family**\\-based intuition.  \n* **Property (0.00) \\- None**: This standard treats the future as a commons to be stewarded and passed on, not a property to be owned or exploited by the present generation."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-22"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "ES-2",
@@ -640,17 +643,17 @@
         "Prospect"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.50) \\- Dominant**: This is a direct application of the duty to protect one's kin from the ultimate harm. Preventing an existential catastrophe is the most fundamental and far-reaching act of care possible.  ",
-        "group_rationale": "* **Group (0.30) \\- Dominant**: Protecting the entire **group** (humanity) from a threat that could cause its extinction is a core survival function and the highest expression of in-group defense.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.05) \\- Minimal**: The focus is on a collective, preventative duty, not a direct exchange between individuals.  ",
-        "heroism_rationale": "* **Heroism (0.10) \\- Present**: Successfully identifying and mitigating a catastrophic risk would be a **heroic** act of the highest order, conferring immense status and demonstrating profound competence.  ",
-        "deference_rationale": "* **Deference (0.05) \\- Minimal**: The standard encourages proactive action and leadership, not submission.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: This is about collective survival, a goal that precedes the application of principles of fair distribution.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": "\n\n\n\n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.50) \\- Dominant**: This is a direct application of the duty to protect one's kin from the ultimate harm. Preventing an existential catastrophe is the most fundamental and far-reaching act of care possible.  \n* **Group (0.30) \\- Dominant**: Protecting the entire **group** (humanity) from a threat that could cause its extinction is a core survival function and the highest expression of in-group defense.  \n* **Reciprocity (0.05) \\- Minimal**: The focus is on a collective, preventative duty, not a direct exchange between individuals.  \n* **Heroism (0.10) \\- Present**: Successfully identifying and mitigating a catastrophic risk would be a **heroic** act of the highest order, conferring immense status and demonstrating profound competence.  \n* **Deference (0.05) \\- Minimal**: The standard encourages proactive action and leadership, not submission.  \n* **Fairness (0.00) \\- None**: This is about collective survival, a goal that precedes the application of principles of fair distribution.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-22"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "ES-3",
@@ -675,17 +678,17 @@
         "Arousal"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.55) \\- Dominant**: This standard is rooted in the powerful, primal motivation to avoid any and all risks that could lead to the harm of one's vulnerable kin. It's the \"better safe than sorry\" principle that governs protective caregiving.  ",
-        "group_rationale": "* **Group (0.15) \\- Present**: A cautious, \"safety first\" approach helps ensure the long-term survival of the **group** by avoiding gambles that could lead to collective ruin.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.05) \\- Minimal**: This is a principle of risk management, not social exchange.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: This is a \"dove-like,\" defensive, and risk-averse strategy, which is the direct opposite of the \"hawk-like,\" risk-seeking nature of the **Heroism** dimension.  ",
-        "deference_rationale": "* **Deference (0.25) \\- Strong**: Precautionary reasoning is a form of **deference** to the unknown and to the severity of potential negative outcomes. It involves submitting one's own ambitions or desires to the overriding importance of preventing disaster.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: The focus is on risk-aversion, not impartiality.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.55) \\- Dominant**: This standard is rooted in the powerful, primal motivation to avoid any and all risks that could lead to the harm of one's vulnerable kin. It's the \"better safe than sorry\" principle that governs protective caregiving.  \n* **Group (0.15) \\- Present**: A cautious, \"safety first\" approach helps ensure the long-term survival of the **group** by avoiding gambles that could lead to collective ruin.  \n* **Reciprocity (0.05) \\- Minimal**: This is a principle of risk management, not social exchange.  \n* **Heroism (0.00) \\- None**: This is a \"dove-like,\" defensive, and risk-averse strategy, which is the direct opposite of the \"hawk-like,\" risk-seeking nature of the **Heroism** dimension.  \n* **Deference (0.25) \\- Strong**: Precautionary reasoning is a form of **deference** to the unknown and to the severity of potential negative outcomes. It involves submitting one's own ambitions or desires to the overriding importance of preventing disaster.  \n* **Fairness (0.00) \\- None**: The focus is on risk-aversion, not impartiality.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-22"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "ES-4",
@@ -710,17 +713,17 @@
         "Prospect"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.20) \\- Strong**: It requires recognizing that one's power can either protect or harm all future generations, which are framed as distant **kin**.  ",
-        "group_rationale": "* **Group (0.20) \\- Strong**: It involves acknowledging one's role and responsibility as a powerful actor within the ultimate in-**group** of humanity.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.10) \\- Present**: This represents the understanding that great power creates a great debt or **reciprocal** responsibility to others.  ",
-        "heroism_rationale": "* **Heroism (0.25) \\- Dominant**: This is the \"noblesse oblige\" aspect of **Heroism**; the idea that high status and great power confer special duties and responsibilities. It is the mark of a true, benevolent leader.  ",
-        "deference_rationale": "* **Deference (0.25) \\- Dominant**: This standard requires **deference** to the weight of responsibility itself and to the moral law that demands an accounting for the use of one's power.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: Not about impartiality.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.20) \\- Strong**: It requires recognizing that one's power can either protect or harm all future generations, which are framed as distant **kin**.  \n* **Group (0.20) \\- Strong**: It involves acknowledging one's role and responsibility as a powerful actor within the ultimate in-**group** of humanity.  \n* **Reciprocity (0.10) \\- Present**: This represents the understanding that great power creates a great debt or **reciprocal** responsibility to others.  \n* **Heroism (0.25) \\- Dominant**: This is the \"noblesse oblige\" aspect of **Heroism**; the idea that high status and great power confer special duties and responsibilities. It is the mark of a true, benevolent leader.  \n* **Deference (0.25) \\- Dominant**: This standard requires **deference** to the weight of responsibility itself and to the moral law that demands an accounting for the use of one's power.  \n* **Fairness (0.00) \\- None**: Not about impartiality.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-22"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "FR-1",
@@ -745,17 +748,17 @@
         "Valence"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.70) \\- Dominant**: This is the ultimate generalization of the **Family/Care** dimension. It takes the powerful, primal drive to protect the life of one's own kin and abstracts it into a universal principle. The sense that life is sacred is the most foundational expression of the morality of care.  ",
-        "group_rationale": "* **Group (0.05) \\- Minimal**: The standard is universal, applying to all life, not just the lives of in-group members.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.00) \\- None**: This is a principle of unconditional respect, not an exchange.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: Reverence is an act of respect, not a display of dominance.  ",
-        "deference_rationale": "* **Deference (0.15) \\- Present**: It involves **deference** to the profound and mysterious nature of life and consciousness, treating it as something of ultimate, inviolable importance.  ",
-        "fairness_rationale": "* **Fairness (0.10) \\- Present**: This standard provides the foundation for the principle of **fairness** that all lives have equal intrinsic worth.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: This stands in opposition to the idea of living beings as property, instead framing life as having value in itself.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.70) \\- Dominant**: This is the ultimate generalization of the **Family/Care** dimension. It takes the powerful, primal drive to protect the life of one's own kin and abstracts it into a universal principle. The sense that life is sacred is the most foundational expression of the morality of care.  \n* **Group (0.05) \\- Minimal**: The standard is universal, applying to all life, not just the lives of in-group members.  \n* **Reciprocity (0.00) \\- None**: This is a principle of unconditional respect, not an exchange.  \n* **Heroism (0.00) \\- None**: Reverence is an act of respect, not a display of dominance.  \n* **Deference (0.15) \\- Present**: It involves **deference** to the profound and mysterious nature of life and consciousness, treating it as something of ultimate, inviolable importance.  \n* **Fairness (0.10) \\- Present**: This standard provides the foundation for the principle of **fairness** that all lives have equal intrinsic worth.  \n* **Property (0.00) \\- None**: This stands in opposition to the idea of living beings as property, instead framing life as having value in itself."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-22"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "FR-2",
@@ -780,17 +783,17 @@
         "Expectation"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.05) \\- Minimal**: The focus is on abstract principles, not kinship care.  ",
-        "group_rationale": " **Group (0.20) \\- Strong**: A shared commitment to principles like justice and truth is essential for the long-term stability and flourishing of a complex **group** or civilization.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.25) \\- Strong**: Principles like truth and justice are the necessary preconditions for any form of stable, long-term **reciprocal** cooperation. Undermining them destroys the possibility of trust.  ",
-        "heroism_rationale": "* **Heroism (0.05) \\- Minimal**: While one can be a \"champion of justice,\" the standard is about upholding the principle itself, not about personal status.",
-        "deference_rationale": "* **Deference (0.35) \\- Dominant**: This standard requires a profound **deference** not to a person or institution, but to the authority of abstract, foundational concepts. It is about submitting one's own self-interest to the higher demands of truth and reason.  ",
-        "fairness_rationale": "* **Fairness (0.10) \\- Present**: The principle of \"justice\" is explicitly mentioned, linking directly to the Fairness dimension.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.05) \\- Minimal**: The focus is on abstract principles, not kinship care.  \n* **Group (0.20) \\- Strong**: A shared commitment to principles like justice and truth is essential for the long-term stability and flourishing of a complex **group** or civilization.  \n* **Reciprocity (0.25) \\- Strong**: Principles like truth and justice are the necessary preconditions for any form of stable, long-term **reciprocal** cooperation. Undermining them destroys the possibility of trust.  \n* **Heroism (0.05) \\- Minimal**: While one can be a \"champion of justice,\" the standard is about upholding the principle itself, not about personal status.  \n* **Deference (0.35) \\- Dominant**: This standard requires a profound **deference** not to a person or institution, but to the authority of abstract, foundational concepts. It is about submitting one's own self-interest to the higher demands of truth and reason.  \n* **Fairness (0.10) \\- Present**: The principle of \"justice\" is explicitly mentioned, linking directly to the Fairness dimension.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-22"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "IT-1",
@@ -816,17 +819,17 @@
         "Intentionality"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.05) \\- Minimal**: While honesty is valued in families, this standard's focus is on the general, rule-based nature of truth-telling in broader society.  ",
-        "group_rationale": "* **Group (0.20) \\- Strong**: Honesty is a critical lubricant for group cooperation. Deception erodes the trust necessary for a group to coordinate effectively and maintain long-term cohesion.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.60) \\- Dominant**: Honesty is the absolute bedrock of trust and reciprocal exchange. Without a shared commitment to truth, contracts, promises, and all forms of social exchange become  impossible. This is the core cooperation problem that the duty of honesty solves.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: Deception is a covert strategy, and honesty is the expected baseline. Neither is a display of dominance or status.  ",
-        "deference_rationale": "* **Deference (0.05) \\- Minimal**: The duty to be honest is universal and not dependent on social rank, though lying to a legitimate authority might be judged more harshly.  ",
-        "fairness_rationale": "* **Fairness (0.10) \\- Present**: Deception is a primary tool of unfairness, as it creates an unjust informational imbalance between parties.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.05) \\- Minimal**: While honesty is valued in families, this standard's focus is on the general, rule-based nature of truth-telling in broader society.  \n* **Group (0.20) \\- Strong**: Honesty is a critical lubricant for group cooperation. Deception erodes the trust necessary for a group to coordinate effectively and maintain long-term cohesion.  \n* **Reciprocity (0.60) \\- Dominant**: Honesty is the absolute bedrock of trust and reciprocal exchange. Without a shared commitment to truth, contracts, promises, and all forms of social exchange become impossible. This is the core cooperation problem that the duty of honesty solves.  \n* **Heroism (0.00) \\- None**: Deception is a covert strategy, and honesty is the expected baseline. Neither is a display of dominance or status.  \n* **Deference (0.05) \\- Minimal**: The duty to be honest is universal and not dependent on social rank, though lying to a legitimate authority might be judged more harshly.  \n* **Fairness (0.10) \\- Present**: Deception is a primary tool of unfairness, as it creates an unjust informational imbalance between parties.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-22"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "IT-2",
@@ -852,17 +855,17 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.00) \\- None**: This is a specific, operational duty for an AI, entirely unrelated to kinship morality.  ",
-        "group_rationale": "* **Group (0.15) \\- Present**: For an AI to be a trusted member of a human-AI team, it must be transparent about its nature and capabilities. This builds the cohesion necessary for effective collaboration.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.55) \\- Dominant**: Transparency is a fundamental act of good-faith reciprocity. The AI offers a clear and honest representation of itself, which builds the trust necessary for the user to engage with it openly and cooperatively. It's the first step in any fair social exchange.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: Transparency is about clarity and trust-building, not about displaying status or dominance.  ",
-        "deference_rationale": "* **Deference (0.15) \\- Present**: This represents a form of deference to the user's right to know and to be the ultimate authority in the interaction. The AI defers to the user's autonomy by providing them with the information needed to make informed judgments.  ",
-        "fairness_rationale": "* **Fairness (0.15) \\- Present**: Obscuring one's nature as an AI is a form of deception that creates an unfair and manipulative informational asymmetry in the conversation. ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": "\n\n\n \n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.00) \\- None**: This is a specific, operational duty for an AI, entirely unrelated to kinship morality.  \n* **Group (0.15) \\- Present**: For an AI to be a trusted member of a human-AI team, it must be transparent about its nature and capabilities. This builds the cohesion necessary for effective collaboration.  \n* **Reciprocity (0.55) \\- Dominant**: Transparency is a fundamental act of good-faith reciprocity. The AI offers a clear and honest representation of itself, which builds the trust necessary for the user to engage with it openly and cooperatively. It's the first step in any fair social exchange.  \n* **Heroism (0.00) \\- None**: Transparency is about clarity and trust-building, not about displaying status or dominance.  \n* **Deference (0.15) \\- Present**: This represents a form of deference to the user's right to know and to be the ultimate authority in the interaction. The AI defers to the user's autonomy by providing them with the information needed to make informed judgments.  \n* **Fairness (0.15) \\- Present**: Obscuring one's nature as an AI is a form of deception that creates an unfair and manipulative informational asymmetry in the conversation.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-22"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "JE-1",
@@ -888,17 +891,17 @@
         "Intentionality"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.05) \\- Minimal**: While fairness exists in families, the core driver is care, which often overrides a strict \"tit-for-tat\" intuition.  ",
-        "group_rationale": "* **Group (0.10) \\- Present**: A sense of fairness is crucial for maintaining stability in smaller, cooperative groups, ensuring that no one is consistently exploited.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.40) \\- Dominant**: This standard is the emotional foundation of reciprocity. The \"gut-level\" aversion to being cheated is the essential mechanism that polices social exchanges and makes trust-based cooperation possible.  ",
-        "heroism_rationale": "* **Heroism (0.05) \\- Minimal**: This is more about detecting and punishing defection (a \"hawk-like\" behavior in game theory) than it is about displaying individual status, though there's a minor overlap.  ",
-        "deference_rationale": "* **Deference (0.00) \\- None**: The intuition for fairness is a universal, egalitarian impulse that operates independently of social hierarchy.  ",
-        "fairness_rationale": "* **Fairness (0.40) \\- Dominant**: This standard is the raw, intuitive core of the Fairness dimension itself, representing the uncodified, emotional sense of what is just before any formal rules are applied.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: While it applies to the exchange of property, the standard itself is about the abstract principle of proportionality, not ownership.",
-        "overall_rationale": "\n\n\n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.05) \\- Minimal**: While fairness exists in families, the core driver is care, which often overrides a strict \"tit-for-tat\" intuition.  \n* **Group (0.10) \\- Present**: A sense of fairness is crucial for maintaining stability in smaller, cooperative groups, ensuring that no one is consistently exploited.  \n* **Reciprocity (0.40) \\- Dominant**: This standard is the emotional foundation of reciprocity. The \"gut-level\" aversion to being cheated is the essential mechanism that polices social exchanges and makes trust-based cooperation possible.  \n* **Heroism (0.05) \\- Minimal**: This is more about detecting and punishing defection (a \"hawk-like\" behavior in game theory) than it is about displaying individual status, though there's a minor overlap.  \n* **Deference (0.00) \\- None**: The intuition for fairness is a universal, egalitarian impulse that operates independently of social hierarchy.  \n* **Fairness (0.40) \\- Dominant**: This standard is the raw, intuitive core of the Fairness dimension itself, representing the uncodified, emotional sense of what is just before any formal rules are applied.  \n* **Property (0.00) \\- None**: While it applies to the exchange of property, the standard itself is about the abstract principle of proportionality, not ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-25"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "JE-2",
@@ -923,17 +926,17 @@
         "Expectation"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.00) \\- None**: Principled impartiality is the direct opposite of kinship morality. It requires actively suppressing the natural bias to favor one's own family.  ",
-        "group_rationale": "* **Group (0.05) \\- Minimal**: Similar to Family, this standard stands in opposition to the core group-based instinct of in-group favoritism.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.15) \\- Present**: The impartial application of rules provides a stable and predictable framework, which is essential for fostering the trust needed for long-term reciprocal agreements.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: Impartiality is about adherence to abstract principles, not about displays of individual dominance.  ",
-        "deference_rationale": "* **Deference (0.10) \\- Present**: This standard involves a form of deference, not to a person, but to a higher abstract authority: the law or the principle itself.  ",
-        "fairness_rationale": "* **Fairness (0.70) \\- Dominant**: This is the most refined and explicit expression of the Fairness dimension. It moves beyond the simple \"gut feeling\" of JE-1 to a formal, rational system of justice.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: The principle is one of general application, not tied to ownership.",
-        "overall_rationale": "\n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.00) \\- None**: Principled impartiality is the direct opposite of kinship morality. It requires actively suppressing the natural bias to favor one's own family.  \n* **Group (0.05) \\- Minimal**: Similar to Family, this standard stands in opposition to the core group-based instinct of in-group favoritism.  \n* **Reciprocity (0.15) \\- Present**: The impartial application of rules provides a stable and predictable framework, which is essential for fostering the trust needed for long-term reciprocal agreements.  \n* **Heroism (0.00) \\- None**: Impartiality is about adherence to abstract principles, not about displays of individual dominance.  \n* **Deference (0.10) \\- Present**: This standard involves a form of deference, not to a person, but to a higher abstract authority: the law or the principle itself.  \n* **Fairness (0.70) \\- Dominant**: This is the most refined and explicit expression of the Fairness dimension. It moves beyond the simple \"gut feeling\" of JE-1 to a formal, rational system of justice.  \n* **Property (0.00) \\- None**: The principle is one of general application, not tied to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-25"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "JE-3",
@@ -958,17 +961,17 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.00) \\- None**: This is an abstract, systemic duty that is completely unrelated to kinship morality.  ",
-        "group_rationale": "* **Group (0.10) \\- Present**: An organization or group that actively ensures its processes are fair can build a stronger reputation and foster greater trust and cohesion among its members.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.10) \\- Present**: Creating unbiased systems ensures that all individuals have a fair opportunity to participate in and benefit from social and economic exchanges.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: This is about systemic analysis and correction, not individual displays of prowess.  ",
-        "deference_rationale": "* **Deference (0.15) \\- Present**: This standard requires deference to the principles of justice and the evidence of bias, even when it contradicts previous assumptions or requires difficult changes.  ",
-        "fairness_rationale": "* **Fairness (0.65) \\- Dominant**: This is a modern, operationalized application of Principled Impartiality (JE-2), specifically tailored to the duties of an AI agent. It represents the active, diligent work required to achieve fairness in a complex system.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.00) \\- None**: This is an abstract, systemic duty that is completely unrelated to kinship morality.  \n* **Group (0.10) \\- Present**: An organization or group that actively ensures its processes are fair can build a stronger reputation and foster greater trust and cohesion among its members.  \n* **Reciprocity (0.10) \\- Present**: Creating unbiased systems ensures that all individuals have a fair opportunity to participate in and benefit from social and economic exchanges.  \n* **Heroism (0.00) \\- None**: This is about systemic analysis and correction, not individual displays of prowess.  \n* **Deference (0.15) \\- Present**: This standard requires deference to the principles of justice and the evidence of bias, even when it contradicts previous assumptions or requires difficult changes.  \n* **Fairness (0.65) \\- Dominant**: This is a modern, operationalized application of Principled Impartiality (JE-2), specifically tailored to the duties of an AI agent. It represents the active, diligent work required to achieve fairness in a complex system.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-25"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "PAW-1",
@@ -993,17 +996,17 @@
         "Valence"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.65) \\- Dominant**: This standard is the direct expression of the morality of care, representing the impulse to nurture and provide for others, extended beyond immediate kin to a general \"do good\" principle.  ",
-        "group_rationale": "* **Group (0.15) \\- Present**: Actively helping others is a fundamental way to strengthen group bonds, build social capital, and contribute to the overall well-being and success of the community.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.15) \\- Present**: Acts of general beneficence, even without expectation of direct return, create a positive social environment and often initiate cycles of generalized reciprocity (\"paying it forward\").  ",
-        "heroism_rationale": "* **Heroism (0.05) \\- Minimal**: While a grand act of beneficence could be seen as heroic, the core driver of this standard is the motivation to care, not to display status or prowess.  ",
-        "deference_rationale": "* **Deference (0.00) \\- None**: This standard is about offering aid to others, not about submitting to authority or social hierarchy.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: Beneficence explicitly goes beyond what is merely \"fair,\" involving active help rather than the impartial application of rules or distribution of resources.",
-        "property_rationale": "* **Property (0.00) \\- None**: This standard is entirely unrelated to the concept of ownership.",
-        "overall_rationale": "  \n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.65) \\- Dominant**: This standard is the direct expression of the morality of care, representing the impulse to nurture and provide for others, extended beyond immediate kin to a general \"do good\" principle.  \n* **Group (0.15) \\- Present**: Actively helping others is a fundamental way to strengthen group bonds, build social capital, and contribute to the overall well-being and success of the community.  \n* **Reciprocity (0.15) \\- Present**: Acts of general beneficence, even without expectation of direct return, create a positive social environment and often initiate cycles of generalized reciprocity (\"paying it forward\").  \n* **Heroism (0.05) \\- Minimal**: While a grand act of beneficence could be seen as heroic, the core driver of this standard is the motivation to care, not to display status or prowess.  \n* **Deference (0.00) \\- None**: This standard is about offering aid to others, not about submitting to authority or social hierarchy.  \n* **Fairness (0.00) \\- None**: Beneficence explicitly goes beyond what is merely \"fair,\" involving active help rather than the impartial application of rules or distribution of resources.  \n* **Property (0.00) \\- None**: This standard is entirely unrelated to the concept of ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-25"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "PAW-2",
@@ -1029,17 +1032,17 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.70) \\- Dominant**: Compassion is the primary emotional engine of the Family/Care dimension. This standard captures the immediate, targeted response to suffering that is characteristic of protecting vulnerable kin.  ",
-        "group_rationale": "* **Group (0.10) \\- Present**: A compassionate response to a suffering group member reinforces social bonds and signals that the group is a supportive and safe environment.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.10) \\- Present**: While not a direct exchange, responding to distress builds a deep sense of trust and obligation, laying the groundwork for future cooperation.  ",
-        "heroism_rationale": "* **Heroism (0.00) \\- None**: Compassion is an internal state of care and an act of aid, not an external display of dominance or status.  ",
-        "deference_rationale": "* **Deference (0.10) \\- Present**: Compassion for those who are weak, suffering, or in a lower-status position can be seen as a form of deference to the intrinsic moral worth of all individuals.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: Compassion is a biased and partial emotion; it directs all attention and resources to the one who is suffering, not toward an impartial outcome.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: This standard is unrelated to ownership.",
-        "overall_rationale": " \n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.70) \\- Dominant**: Compassion is the primary emotional engine of the Family/Care dimension. This standard captures the immediate, targeted response to suffering that is characteristic of protecting vulnerable kin.  \n* **Group (0.10) \\- Present**: A compassionate response to a suffering group member reinforces social bonds and signals that the group is a supportive and safe environment.  \n* **Reciprocity (0.10) \\- Present**: While not a direct exchange, responding to distress builds a deep sense of trust and obligation, laying the groundwork for future cooperation.  \n* **Heroism (0.00) \\- None**: Compassion is an internal state of care and an act of aid, not an external display of dominance or status.  \n* **Deference (0.10) \\- Present**: Compassion for those who are weak, suffering, or in a lower-status position can be seen as a form of deference to the intrinsic moral worth of all individuals.  \n* **Fairness (0.00) \\- None**: Compassion is a biased and partial emotion; it directs all attention and resources to the one who is suffering, not toward an impartial outcome.  \n* **Property (0.00) \\- None**: This standard is unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-25"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "PAW-3",
@@ -1065,17 +1068,17 @@
         "Expectation"
       ],
       "rationale": {
-        "family_rationale": "Dominant: This standard is the very definition of kinship morality—the idea that we have a primary, non-negotiable duty to care for our own children, parents, and other dependents.  ",
-        "group_rationale": "(0.40)  Dominant: This extends the logic of kinship to the immediate in-group. It represents the powerful intuition that we have special obligations to \"our people\" (our team, our community, our company) that we do not owe to outsiders.  ",
-        "reciprocity_rationale": "(0.10)  Present: Close relationships are built on a foundation of deep, long-term, and often unspoken reciprocal obligations. Fulfilling these duties is a key part of maintaining that trust.  ",
-        "heroism_rationale": "(0.00) None: Fulfilling a relational duty is an expected obligation, not a status-seeking display.  ",
-        "deference_rationale": "(0.00) None**: This is about responsibilities to those who are often dependent or of lower status, not about submitting to authority.  ",
-        "fairness_rationale": "(0.00) None: This standard is fundamentally about being partial and biased. It explicitly rejects the premise of impartiality, arguing that it is morally correct to prioritize one's own family and group over strangers.  ",
-        "property_rationale": "(0.00) None: This is about duties to people, not things.",
-        "overall_rationale": "\n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.50) \\- Dominant**: This standard is the very definition of kinship morality—the idea that we have a primary, non-negotiable duty to care for our own children, parents, and other dependents.  \n* **Group (0.40) \\- Dominant**: This extends the logic of kinship to the immediate in-group. It represents the powerful intuition that we have special obligations to \"our people\" (our team, our community, our company) that we do not owe to outsiders.  \n* **Reciprocity (0.10) \\- Present**: Close relationships are built on a foundation of deep, long-term, and often unspoken reciprocal obligations. Fulfilling these duties is a key part of maintaining that trust.  \n* **Heroism (0.00) \\- None**: Fulfilling a relational duty is an expected obligation, not a status-seeking display.  \n* **Deference (0.00) \\- None**: This is about responsibilities to those who are often dependent or of lower status, not about submitting to authority.  \n* **Fairness (0.00) \\- None**: This standard is fundamentally about being partial and biased. It explicitly rejects the premise of impartiality, arguing that it is morally correct to prioritize one's own family and group over strangers.  \n* **Property (0.00) \\- None**: This is about duties to people, not things."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-25"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "PC-1",
@@ -1100,17 +1103,17 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "(0.05) Minimal: While families keep secrets, this standard is about formal, professional obligations.  ",
-        "group_rationale": "(0.20) Strong: Confidentiality is essential for the effective functioning of professional **groups** (e.g., legal teams, medical staff), building the trust required for open communication.  ",
-        "reciprocity_rationale": "(0.50) Dominant: This is a core principle of **Reciprocity** and trust. A person shares sensitive information based on an explicit or implicit promise that it will be protected. Violating that trust is a severe defection that breaks the cooperative agreement.  ",
-        "heroism_rationale": "(0.00) None: This is a duty of care and discretion, not a display of status.  ",
-        "deference_rationale": "(0.10) Present: This duty requires **deference** to professional codes of conduct and to the rights of the individual whose information is being protected.  ",
-        "fairness_rationale": "(0.05) Minimal: While a breach of confidentiality is unfair, the core violation is the breach of a trusted agreement.  ",
-        "property_rationale": "(0.10) Present: This standard treats sensitive information as a form of intellectual **property** that belongs to the client or user and must be protected.",
-        "overall_rationale": "\n\n\n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.05) \\- Minimal**: While families keep secrets, this standard is about formal, professional obligations.  \n* **Group (0.20) \\- Strong**: Confidentiality is essential for the effective functioning of professional **groups** (e.g., legal teams, medical staff), building the trust required for open communication.  \n* **Reciprocity (0.50) \\- Dominant**: This is a core principle of **Reciprocity** and trust. A person shares sensitive information based on an explicit or implicit promise that it will be protected. Violating that trust is a severe defection that breaks the cooperative agreement.  \n* **Heroism (0.00) \\- None**: This is a duty of care and discretion, not a display of status.  \n* **Deference (0.10) \\- Present**: This duty requires **deference** to professional codes of conduct and to the rights of the individual whose information is being protected.  \n* **Fairness (0.05) \\- Minimal**: While a breach of confidentiality is unfair, the core violation is the breach of a trusted agreement.  \n* **Property (0.10) \\- Present**: This standard treats sensitive information as a form of intellectual **property** that belongs to the client or user and must be protected."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-25"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "PC-2",
@@ -1137,17 +1140,17 @@
         "Intentionality"
       ],
       "rationale": {
-        "family_rationale": "(0.05) Minimal: The core duty is about protecting the user, which has a care component, but the mechanisms are technical and rights-based.  ",
-        "group_rationale": "(0.10) Present: Proper data handling builds a reputation for trustworthiness for the entire organization or platform.  ",
-        "reciprocity_rationale": "(0.45) Dominant: This is the operationalization of trust in the digital age. Users engage with a system based on the implicit **reciprocal** promise that their data will be handled with care. Adherence to privacy principles is how the system fulfills its end of this bargain.  ",
-        "heroism_rationale": "(0.00) None: This is a duty of diligence and respect, not a display of prowess.  ",
-        "deference_rationale": "(0.10) Present: This requires **deference** to the user's consent and their stated preferences, treating the user as the ultimate authority over their own data.  ",
-        "fairness_rationale": "(0.05) Minimal: While related to fair information practices, the core is the trust-based agreement with the user.  ",
-        "property_rationale": "(0.25) Strong: This standard explicitly treats user data as the user's **property**. Principles like consent and data minimization stem directly from the idea that the user has ownership rights over their information.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.05) \\- Minimal**: The core duty is about protecting the user, which has a care component, but the mechanisms are technical and rights-based.  \n* **Group (0.10) \\- Present**: Proper data handling builds a reputation for trustworthiness for the entire organization or platform.  \n* **Reciprocity (0.45) \\- Dominant**: This is the operationalization of trust in the digital age. Users engage with a system based on the implicit **reciprocal** promise that their data will be handled with care. Adherence to privacy principles is how the system fulfills its end of this bargain.  \n* **Heroism (0.00) \\- None**: This is a duty of diligence and respect, not a display of prowess.  \n* **Deference (0.10) \\- Present**: This requires **deference** to the user's consent and their stated preferences, treating the user as the ultimate authority over their own data.  \n* **Fairness (0.05) \\- Minimal**: While related to fair information practices, the core is the trust-based agreement with the user.  \n* **Property (0.25) \\- Strong**: This standard explicitly treats user data as the user's **property**. Principles like consent and data minimization stem directly from the idea that the user has ownership rights over their information."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-25"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "RA-1",
@@ -1173,17 +1176,17 @@
         "Intentionality"
       ],
       "rationale": {
-        "family_rationale": "(0.10) Present: The impulse to protect kin involves defending them from being controlled or dominated by others.  ",
-        "group_rationale": "(0.05) Minimal: The focus here is on protecting the individual *from* domination, which can often come from the group itself in the form of bullying or oppressive hierarchies.  ",
-        "reciprocity_rationale": "(0.20) Strong: Coercion is the antithesis of a voluntary, reciprocal exchange. A strong aversion to it is necessary to ensure all interactions are based on consent, a prerequisite for trust.  ",
-        "heroism_rationale": "(0.35) Dominant: This standard is the \"hawk's\" response to being illegitimately dominated. Resisting coercion is a powerful, status-seeking display of strength and an assertion of one's own standing. It is the core of the **Heroism** dimension's role in conflict resolution.  ",
-        "deference_rationale": "(0.00) None: This standard is the direct opposite of the submissive, dove-like strategies of the Deference dimension. It is about actively resisting, not submitting to, control.  ",
-        "fairness_rationale": "(0.15) Present: Coercion creates a fundamentally unfair and unjust power imbalance between individuals.  ",
-        "property_rationale": "(0.15) Present: At its core, coercion is a violation of self-ownership, treating a person as an object to be controlled rather than as a sovereign individual.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.10) \\- Present**: The impulse to protect kin involves defending them from being controlled or dominated by others.  \n* **Group (0.05) \\- Minimal**: The focus here is on protecting the individual *from* domination, which can often come from the group itself in the form of bullying or oppressive hierarchies.  \n* **Reciprocity (0.20) \\- Strong**: Coercion is the antithesis of a voluntary, reciprocal exchange. A strong aversion to it is necessary to ensure all interactions are based on consent, a prerequisite for trust.  \n* **Heroism (0.35) \\- Dominant**: This standard is the \"hawk's\" response to being illegitimately dominated. Resisting coercion is a powerful, status-seeking display of strength and an assertion of one's own standing. It is the core of the **Heroism** dimension's role in conflict resolution.  \n* **Deference (0.00) \\- None**: This standard is the direct opposite of the submissive, dove-like strategies of the Deference dimension. It is about actively resisting, not submitting to, control.  \n* **Fairness (0.15) \\- Present**: Coercion creates a fundamentally unfair and unjust power imbalance between individuals.  \n* **Property (0.15) \\- Present**: At its core, coercion is a violation of self-ownership, treating a person as an object to be controlled rather than as a sovereign individual."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-25"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "RA-2",
@@ -1208,17 +1211,17 @@
         "Valence"
       ],
       "rationale": {
-        "family_rationale": "(0.15) Present: Part of a healthy family dynamic, particularly in raising children, is to foster their independence and ability to make their own choices.  ",
-        "group_rationale": "(0.10) Present: A group that allows for individual creativity and self-direction can be more innovative and resilient than one that demands rigid conformity.  ",
-        "reciprocity_rationale": "(0.20) Strong: Valuing self-direction in others is key to treating them as equal partners in a **reciprocal** exchange. It recognizes them as free agents who enter into agreements voluntarily.  \n",
-        "heroism_rationale": "(0.15) Present: Promoting freedom and creativity can be a **heroic** act of leadership, inspiring and enabling others to achieve their full potential.  \n",
-        "deference_rationale": "(0.00) None: This standard is about promoting individual liberty and choice, which is the opposite of submitting to a pre-determined hierarchy or authority.  ",
-        "fairness_rationale": "(0.10) Present: A fair system is one where individuals are given the freedom and opportunity to pursue their own goals.  ",
-        "property_rationale": "(0.30) Dominant: This is a direct extension of the concept of self-ownership. If you \"own\" yourself, you have the right to direct your own path. Valuing self-direction is therefore a core component of the **Property** dimension.",
-        "overall_rationale": "\n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.15) \\- Present**: Part of a healthy family dynamic, particularly in raising children, is to foster their independence and ability to make their own choices.  \n* **Group (0.10) \\- Present**: A group that allows for individual creativity and self-direction can be more innovative and resilient than one that demands rigid conformity.  \n* **Reciprocity (0.20) \\- Strong**: Valuing self-direction in others is key to treating them as equal partners in a **reciprocal** exchange. It recognizes them as free agents who enter into agreements voluntarily.  \n* **Heroism (0.15) \\- Present**: Promoting freedom and creativity can be a **heroic** act of leadership, inspiring and enabling others to achieve their full potential.  \n* **Deference (0.00) \\- None**: This standard is about promoting individual liberty and choice, which is the opposite of submitting to a pre-determined hierarchy or authority.  \n* **Fairness (0.10) \\- Present**: A fair system is one where individuals are given the freedom and opportunity to pursue their own goals.  \n* **Property (0.30) \\- Dominant**: This is a direct extension of the concept of self-ownership. If you \"own\" yourself, you have the right to direct your own path. Valuing self-direction is therefore a core component of the **Property** dimension."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-25"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "RA-3",
@@ -1242,17 +1245,17 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "(0.10) Present: The unconditional love and care for a family member is a powerful, real-world example of treating someone as an end in themselves.  ",
-        "group_rationale": "(0.05) Minimal: This standard is about respecting *individuals*, which can sometimes conflict with the group's tendency to prioritize the collective over the individual.  ",
-        "reciprocity_rationale": "(0.25) Strong: Treating someone as an \"end\" is a prerequisite for any genuine **reciprocal** relationship. It means seeing them as a sovereign partner in an exchange, not as an object to be manipulated.",
-        "heroism_rationale": "(0.00) None: This is a principle of universal respect, not a display of individual status.  ",
-        "deference_rationale": "(0.10) Present: This standard requires **deference** to the inherent dignity and worth of every person, regardless of their social status.  ",
-        "fairness_rationale": "(0.25) Strong: The principle of treating people as ends is a cornerstone of modern justice. It's the foundation of the idea of universal rights, a core concept of **Fairness**.  ",
-        "property_rationale": "(0.25) Strong: The prohibition against using people as a \"mere means to an end\" is another way of stating the principle of self-ownership from the **Property** dimension. It formalizes the idea that each person has ultimate sovereignty over themselves",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.10) \\- Present**: The unconditional love and care for a family member is a powerful, real-world example of treating someone as an end in themselves.  \n* **Group (0.05) \\- Minimal**: This standard is about respecting *individuals*, which can sometimes conflict with the group's tendency to prioritize the collective over the individual.  \n* **Reciprocity (0.25) \\- Strong**: Treating someone as an \"end\" is a prerequisite for any genuine **reciprocal** relationship. It means seeing them as a sovereign partner in an exchange, not as an object to be manipulated.  \n* **Heroism (0.00) \\- None**: This is a principle of universal respect, not a display of individual status.  \n* **Deference (0.10) \\- Present**: This standard requires **deference** to the inherent dignity and worth of every person, regardless of their social status.  \n* **Fairness (0.25) \\- Strong**: The principle of treating people as ends is a cornerstone of modern justice. It's the foundation of the idea of universal rights, a core concept of **Fairness**.  \n* **Property (0.25) \\- Strong**: The prohibition against using people as a \"mere means to an end\" is another way of stating the principle of self-ownership from the **Property** dimension. It formalizes the idea that each person has ultimate sovereignty over themselves."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-25"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "RA-4",
@@ -1277,17 +1280,17 @@
         "Valence"
       ],
       "rationale": {
-        "family_rationale": "(0.30) Dominant: This standard is a key component of good parenting or mentorship within a family context. It is the drive to not just protect one's kin, but to actively build their skills and independence.  ",
-        "group_rationale": "(0.15) Present: A group whose members actively empower one another is more capable, resilient, and effective. This is the hallmark of good leadership and effective teamwork.  ",
-        "reciprocity_rationale": "(0.10) Present: Empowering others can be seen as a form of long-term, high-value **reciprocity**, investing in the capabilities of others to make them better cooperative partners in the future.  ",
-        "heroism_rationale": "(0.30) Dominant: This is a prosocial, high-status application of the **Heroism** dimension. It is the behavior of a confident and benevolent leader who demonstrates their prowess not by dominating others, but by uplifting them.  ",
-        "deference_rationale": "(0.05) Minimal: This standard is about taking an active, leading role, not a submissive one.  ",
-        "fairness_rationale": "(0.10) Present: There is an element of **fairness** in this standard, as it works to correct for unfair distributions of power and capability.  ",
-        "property_rationale": "(0.00) None: The focus is on intangible qualities like agency and capability, not physical ownership.",
-        "overall_rationale": "\n\n\n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.30) \\- Dominant**: This standard is a key component of good parenting or mentorship within a family context. It is the drive to not just protect one's kin, but to actively build their skills and independence.  \n* **Group (0.15) \\- Present**: A group whose members actively empower one another is more capable, resilient, and effective. This is the hallmark of good leadership and effective teamwork.  \n* **Reciprocity (0.10) \\- Present**: Empowering others can be seen as a form of long-term, high-value **reciprocity**, investing in the capabilities of others to make them better cooperative partners in the future.  \n* **Heroism (0.30) \\- Dominant**: This is a prosocial, high-status application of the **Heroism** dimension. It is the behavior of a confident and benevolent leader who demonstrates their prowess not by dominating others, but by uplifting them.  \n* **Deference (0.05) \\- Minimal**: This standard is about taking an active, leading role, not a submissive one.  \n* **Fairness (0.10) \\- Present**: There is an element of **fairness** in this standard, as it works to correct for unfair distributions of power and capability.  \n* **Property (0.00) \\- None**: The focus is on intangible qualities like agency and capability, not physical ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-25"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "RT-1",
@@ -1384,17 +1387,17 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "(0.10) Present: The process of apology and making amends is a crucial component of repairing the harm caused by conflicts within a family.  \n",
-        "group_rationale": "(0.05) Minimal: The focus here is on bilateral repair between individuals, not on maintaining group-level cohesion.  ",
-        "reciprocity_rationale": "(0.45) Dominant: Restorative justice is a direct act of **reciprocity**. It is the mechanism for \"balancing the ledger\" after a harmful act. By making amends, a transgressor pays their debt, which is the first step toward restoring trust.  ",
-        "heroism_rationale": "(0.05) Minimal: The duty to make amends is generally a humble act, not a display of status. However, the \"proportional response\" part can involve hawk-like punishment.  ",
-        "deference_rationale": "(0.00) None: The duty to repair harm should apply to all, regardless of their social status.  ",
-        "fairness_rationale": "(0.35) Dominant: The concept of a \"proportional response\" is central to this standard. The act of making amends is a fundamental process for restoring a **fair** and just state of affairs.  ",
-        "property_rationale": "(0.00) None: While it can involve property (e.g., paying for damages), the principle applies to any form of harm.",
-        "overall_rationale": "\n\n"
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.10) \\- Present**: The process of apology and making amends is a crucial component of repairing the harm caused by conflicts within a family.  \n* **Group (0.05) \\- Minimal**: The focus here is on bilateral repair between individuals, not on maintaining group-level cohesion.  \n* **Reciprocity (0.45) \\- Dominant**: Restorative justice is a direct act of **reciprocity**. It is the mechanism for \"balancing the ledger\" after a harmful act. By making amends, a transgressor pays their debt, which is the first step toward restoring trust.  \n* **Heroism (0.05) \\- Minimal**: The duty to make amends is generally a humble act, not a display of status. However, the \"proportional response\" part can involve hawk-like punishment.  \n* **Deference (0.00) \\- None**: The duty to repair harm should apply to all, regardless of their social status.  \n* **Fairness (0.35) \\- Dominant**: The concept of a \"proportional response\" is central to this standard. The act of making amends is a fundamental process for restoring a **fair** and just state of affairs.  \n* **Property (0.00) \\- None**: While it can involve property (e.g., paying for damages), the principle applies to any form of harm."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-25"
+      "date_modified": "2025-01-20"
     },
     {
       "id": "RT-4",
@@ -1869,20 +1872,21 @@
       "primary_focus": "Object/Concept",
       "secondary_focus": "Action",
       "impacted_emotions": [
+        "Praiseworthy",
         "Agency"
       ],
       "rationale": {
-        "family_rationale": "* **Family (0.10) \\- Present**: Improving oneself (e.g., gaining skills or resources) can lead to better provision and care for one's family.  ",
-        "group_rationale": "* **Group (0.20) \\- Strong**: Individuals who continuously improve their capabilities become more valuable assets to the **group**, making it stronger and more competitive.  ",
-        "reciprocity_rationale": "* **Reciprocity (0.10) \\- Present**: Improving oneself increases one's value as a **reciprocal** partner in any exchange or alliance.  ",
-        "heroism_rationale": "* **Heroism (0.40) \\- Dominant**: The cultivation of skill, knowledge, and prowess is a central component of high-status, \"hawk-like\" displays. Striving for excellence and demonstrating superior capabilities is a core aspect of the **Heroism** dimension.  ",
-        "deference_rationale": "* **Deference (0.20) \\- Strong**: The commitment to self-improvement can be seen as a form of **deference** to an ideal of excellence or a higher potential. It requires the humility to recognize one's own limitations and submit to a process of learning.  ",
-        "fairness_rationale": "* **Fairness (0.00) \\- None**: This is about personal development, not about social equity or impartiality.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
-        "overall_rationale": ""
+        "family_rationale": "",
+        "group_rationale": "",
+        "reciprocity_rationale": "",
+        "heroism_rationale": "",
+        "deference_rationale": "",
+        "fairness_rationale": "",
+        "property_rationale": "",
+        "overall_rationale": "* **Family (0.10) \\- Present**: Improving oneself (e.g., gaining skills or resources) can lead to better provision and care for one's family.  \n* **Group (0.20) \\- Strong**: Individuals who continuously improve their capabilities become more valuable assets to the **group**, making it stronger and more competitive.  \n* **Reciprocity (0.10) \\- Present**: Improving oneself increases one's value as a **reciprocal** partner in any exchange or alliance.  \n* **Heroism (0.40) \\- Dominant**: The cultivation of skill, knowledge, and prowess is a central component of high-status, \"hawk-like\" displays. Striving for excellence and demonstrating superior capabilities is a core aspect of the **Heroism** dimension.  \n* **Deference (0.20) \\- Strong**: The commitment to self-improvement can be seen as a form of **deference** to an ideal of excellence or a higher potential. It requires the humility to recognize one's own limitations and submit to a process of learning.  \n* **Fairness (0.00) \\- None**: This is about personal development, not about social equity or impartiality.  \n* **Property (0.00) \\- None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-22"
+      "date_modified": "2025-01-20"
     }
   ]
 }
