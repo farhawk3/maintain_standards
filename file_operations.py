@@ -237,8 +237,7 @@ class FileManager:
                 heroism_rationale=rat_data.get("heroism_rationale", ""),
                 deference_rationale=rat_data.get("deference_rationale", ""),
                 fairness_rationale=rat_data.get("fairness_rationale", ""),
-                property_rationale=rat_data.get("property_rationale", ""),
-                overall_rationale=rat_data.get("overall_rationale", "")
+                property_rationale=rat_data.get("property_rationale", "")
             )
             
             standard = Standard(

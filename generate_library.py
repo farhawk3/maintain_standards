@@ -85,11 +85,6 @@ def extract_standards_from_markdown(md_file_path):
                 "property": values[6] if len(values) > 6 else 0.0
             }
         
-        # Extract rationale
-        rationale_match = re.search(r'####\s+\*\*MAC Vector Rationale\*\*(.*?)(?=####\s+\*\*Prediction\*\*|$)', 
-                                    section_content, re.DOTALL)
-        overall_rationale = rationale_match.group(1).strip() if rationale_match else ""
-        
         return {
             "id": standard_id,
             "name": name,
@@ -107,8 +102,7 @@ def extract_standards_from_markdown(md_file_path):
                 "heroism_rationale": "",
                 "deference_rationale": "",
                 "fairness_rationale": "",
-                "property_rationale": "",
-                "overall_rationale": overall_rationale
+                "property_rationale": ""
             },
             "date_created": "2025-01-20",
             "date_modified": "2025-01-20"

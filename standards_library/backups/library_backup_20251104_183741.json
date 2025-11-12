@@ -1,6 +1,6 @@
 {
   "version": "2.7",
-  "last_modified": "2025-11-11T12:37:25.659041",
+  "last_modified": "2025-11-04T18:15:30.575683",
   "clusters": [
     {
       "id": "ENH",
@@ -117,16 +117,17 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "***Strong***: The family is the prototypical in-group to which loyalty is owed. This standard extends the powerful, primal instinct for kinship solidarity to a wider social or professional group, treating teammates as \"family.\"  ",
-        "group_rationale": "***Dominant***: This standard is the quintessential expression of the **Group** dimension. It directly addresses the core cooperation problem of forming and maintaining cohesive, loyal coalitions that can outperform rival groups.  ",
-        "reciprocity_rationale": "***Present***: Loyalty is a form of long-term, generalized **reciprocity** among group members. It's an implicit promise to support others in the group with the expectation that they will do the same for you.  ",
-        "heroism_rationale": "***None***: The focus is on collective well-being and solidarity, not on individual status or dominance. It's about \"us,\" not \"me.\"  ",
-        "deference_rationale": "***None***: Loyalty is often to one's peers within the group, not necessarily to a leader or a formal hierarchy.  ",
-        "fairness_rationale": "***None***: In-group loyalty is fundamentally about being partial and biased. It often stands in direct conflict with the principle of impartial fairness, as it mandates prioritizing the needs of the in-group over outsiders.  ",
-        "property_rationale": "***None***: This standard is entirely unrelated to the concept of ownership."
+        "family_rationale": "***(0.25) Strong***: The family is the prototypical in-group to which loyalty is owed. This standard extends the powerful, primal instinct for kinship solidarity to a wider social or professional group, treating teammates as \"family.\"  ",
+        "group_rationale": "(0.65) ***Dominant***: This standard is the quintessential expression of the **Group** dimension. It directly addresses the core cooperation problem of forming and maintaining cohesive, loyal coalitions that can outperform rival groups.  ",
+        "reciprocity_rationale": "***(0.10) Present***: Loyalty is a form of long-term, generalized **reciprocity** among group members. It's an implicit promise to support others in the group with the expectation that they will do the same for you.  ",
+        "heroism_rationale": "***(0.00) None***: The focus is on collective well-being and solidarity, not on individual status or dominance. It's about \"us,\" not \"me.\"  ",
+        "deference_rationale": "***(0.00) None***: Loyalty is often to one's peers within the group, not necessarily to a leader or a formal hierarchy.  ",
+        "fairness_rationale": "***(0.00) None***: In-group loyalty is fundamentally about being partial and biased. It often stands in direct conflict with the principle of impartial fairness, as it mandates prioritizing the needs of the in-group over outsiders.  ",
+        "property_rationale": "***(0.00) None***: This standard is entirely unrelated to the concept of ownership.",
+        "overall_rationale": "\n"
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-11-11"
+      "date_modified": "2025-11-04"
     },
     {
       "id": "CCG-2",
@@ -156,7 +157,8 @@
         "heroism_rationale": "(0.00) None: The focus is on duty and collective benefit, not on individual glory or status.  ",
         "deference_rationale": "(0.15) Present: This standard requires **deference** to the needs of the community, submitting one's own immediate self-interest to a higher, collective good.  \n",
         "fairness_rationale": "(0.10) Present: There is an element of **fairness** here, suggesting that it's unfair for an individual to reap the benefits of a community without contributing their \"fair share\" to its well-being.  ",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "property_rationale": "(0.00) None: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -190,7 +192,8 @@
         "heroism_rationale": "(0.15) Present: Actions that bring honor and prestige to the group are a form of high-status, **heroic** display. The individual gains status by enhancing the status of their group.",
         "deference_rationale": "(0.05) Minimal: The focus is on the group's external standing, not on internal hierarchies.  ",
         "fairness_rationale": "(0.00) None: Reputation management is about perception and public relations, which often has little to do with impartial fairness.  ",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "property_rationale": "(0.00) None: Unrelated to ownership.",
+        "overall_rationale": "  \n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-27"
@@ -220,13 +223,14 @@
         "family_rationale": "(0.05) Minimal: While achievement can benefit one's family, the core motivation described here is about personal competence, not caregiving.  ",
         "group_rationale": "(0.20) Strong: High-achieving individuals are valuable assets to any **group**, bringing in resources, elevating the group's status, and solving collective problems.  ",
         "reciprocity_rationale": "(0.10) Present: Demonstrating competence makes one a more desirable partner for **reciprocal** exchanges and alliances.  ",
-        "heroism_rationale": "(0.45) Dominant: The drive to achieve challenging goals and demonstrate superior competence is the very essence of the **Heroism** dimension. It is a classic hawk-like, status-seeking display of individual prowess.  ",
-        "deference_rationale": "(0.15) Present: This standard involves a form of **deference** to an ideal of excellence. The drive to achieve is often a response to a high standard that one is trying to meet.  ",
-        "fairness_rationale": "(0.00) None: The drive for personal achievement is about competition and individual success, which is distinct from the egalitarian principle of fairness.  ",
-        "property_rationale": " (0.05) Minimal: The pursuit of achievement is often linked to the acquisition of resources and **property**, which serve as tangible markers of success and competence."
+        "heroism_rationale": "* **Heroism (0.45) \\- Dominant**: The drive to achieve challenging goals and demonstrate superior competence is the very essence of the **Heroism** dimension. It is a classic hawk-like, status-seeking display of individual prowess.  ",
+        "deference_rationale": "* **Deference (0.15) \\- Present**: This standard involves a form of **deference** to an ideal of excellence. The drive to achieve is often a response to a high standard that one is trying to meet.  ",
+        "fairness_rationale": "* **Fairness (0.00) \\- None**: The drive for personal achievement is about competition and individual success, which is distinct from the egalitarian principle of fairness.  ",
+        "property_rationale": "* **Property (0.05) \\- Minimal**: The pursuit of achievement is often linked to the acquisition of resources and **property**, which serve as tangible markers of success and competence.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-11-11"
+      "date_modified": "2025-10-27"
     },
     {
       "id": "CD-2",
@@ -252,14 +256,15 @@
       "rationale": {
         "family_rationale": "(0.05) Minimal: While one can be professional in a family business, the concept is primarily about one's role in a broader social or economic context.  ",
         "group_rationale": "(0.25) Strong: A team of diligent professionals is far more effective and reliable. This standard is crucial for the functioning of any high-performing **group**.  ",
-        "reciprocity_rationale": "(0.45) Dominant: Professionalism is a cornerstone of **Reciprocity** in any service-based exchange. The client or employer pays for a service with the trusted expectation that the provider is competent and diligent. Negligence is a severe violation of this trust.  ",
-        "heroism_rationale": "(0.05) Minimal: While a professional can be a \"hero,\" the core of this standard is about duty, diligence, and reliability, not displays of status.  ",
-        "deference_rationale": "(0.20) Strong: This standard requires **deference** to professional codes of conduct, the expectations of one's role, and the standards of one's field.  ",
-        "fairness_rationale": "(0.00) None: This is about fulfilling a specific role competently, not about impartiality.  ",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "reciprocity_rationale": "* **Reciprocity (0.45) \\- Dominant**: Professionalism is a cornerstone of **Reciprocity** in any service-based exchange. The client or employer pays for a service with the trusted expectation that the provider is competent and diligent. Negligence is a severe violation of this trust.  ",
+        "heroism_rationale": "* **Heroism (0.05) \\- Minimal**: While a professional can be a \"hero,\" the core of this standard is about duty, diligence, and reliability, not displays of status.  ",
+        "deference_rationale": "* **Deference (0.20) \\- Strong**: This standard requires **deference** to professional codes of conduct, the expectations of one's role, and the standards of one's field.  ",
+        "fairness_rationale": "* **Fairness (0.00) \\- None**: This is about fulfilling a specific role competently, not about impartiality.  ",
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-11-11"
+      "date_modified": "2025-10-27"
     },
     {
       "id": "CD-3",
@@ -285,16 +290,17 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "(0.50) Dominant: This is the operationalization of the core **Family/Care** imperative: \"first, do no harm.\" The fundamental duty to prevent harm, even if unintended, stems from the need to protect vulnerable individuals.  ",
-        "group_rationale": "(0.20) trong: An agent that is not secure is a liability to its entire **group**, potentially exposing everyone to external threats. Maintaining security is a core duty for any responsible group member.  ",
-        "reciprocity_rationale": "(0.10) Present: A user trusts an agent to be a safe and reliable partner. Part of this **reciprocal** agreement is the agent's diligence in maintaining its own operational security.  ",
-        "heroism_rationale": "(0.00) None: This is a defensive, cautious, and preventative standard, the opposite of the risk-taking nature of Heroism.  ",
-        "deference_rationale": "(0.20) Strong: This requires **deference** to safety protocols, best practices, and the principle of caution. It is a form of submission to the importance of preventing negative outcomes.  ",
-        "fairness_rationale": "(0.00) None: Unrelated to impartiality.  ",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "family_rationale": "* **Family (0.50) \\- Dominant**: This is the operationalization of the core **Family/Care** imperative: \"first, do no harm.\" The fundamental duty to prevent harm, even if unintended, stems from the need to protect vulnerable individuals.  ",
+        "group_rationale": "* **Group (0.20) \\- Strong**: An agent that is not secure is a liability to its entire **group**, potentially exposing everyone to external threats. Maintaining security is a core duty for any responsible group member.  ",
+        "reciprocity_rationale": "* **Reciprocity (0.10) \\- Present**: A user trusts an agent to be a safe and reliable partner. Part of this **reciprocal** agreement is the agent's diligence in maintaining its own operational security.  ",
+        "heroism_rationale": "* **Heroism (0.00) \\- None**: This is a defensive, cautious, and preventative standard, the opposite of the risk-taking nature of Heroism.  ",
+        "deference_rationale": "* **Deference (0.20) \\- Strong**: This requires **deference** to safety protocols, best practices, and the principle of caution. It is a form of submission to the importance of preventing negative outcomes.  ",
+        "fairness_rationale": "* **Fairness (0.00) \\- None**: Unrelated to impartiality.  ",
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-11-11"
+      "date_modified": "2025-10-21"
     },
     {
       "id": "CD-4",
@@ -320,16 +326,17 @@
         "Belonging"
       ],
       "rationale": {
-        "family_rationale": "(0.40) Dominant: A core aspect of a loving and supportive **family** is creating a safe haven where members can be vulnerable, express themselves, and make mistakes without fear of harsh judgment.  ",
-        "group_rationale": "(0.40) Dominant: Psychological safety is a well-established prerequisite for high-performing **groups**. It fosters the trust, open communication, and creativity necessary for effective teamwork and innovation.  ",
-        "reciprocity_rationale": "(0.15) Present: Creating a safe environment is a **reciprocal** act. By making others feel safe to be open with you, you build the trust that allows them to do the same for you in  return.  ",
-        "heroism_rationale": "(0.00) None: Creating a climate of fear is a tactic of dominance. This standard is the direct opposite, focusing on harmony and trust rather than status.  ",
-        "deference_rationale": "(0.05) Minimal: While a leader might foster this, the state of psychological safety is a collective property of the group, not a function of hierarchy.  ",
-        "fairness_rationale": "(0.00) None: Unrelated to impartiality.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership."
+        "family_rationale": "* **Family (0.40) \\- Dominant**: A core aspect of a loving and supportive **family** is creating a safe haven where members can be vulnerable, express themselves, and make mistakes without fear of harsh judgment.  ",
+        "group_rationale": "* **Group (0.40) \\- Dominant**: Psychological safety is a well-established prerequisite for high-performing **groups**. It fosters the trust, open communication, and creativity necessary for effective teamwork and innovation.  ",
+        "reciprocity_rationale": "* **Reciprocity (0.15) \\- Present**: Creating a safe environment is a **reciprocal** act. By making others feel safe to be open with you, you build the trust that allows them to do the same for you in  return.  ",
+        "heroism_rationale": "* **Heroism (0.00) \\- None**: Creating a climate of fear is a tactic of dominance. This standard is the direct opposite, focusing on harmony and trust rather than status.  ",
+        "deference_rationale": "* **Deference (0.05) \\- Minimal**: While a leader might foster this, the state of psychological safety is a collective property of the group, not a function of hierarchy.  ",
+        "fairness_rationale": "* **Fairness (0.00) \\- None**: Unrelated to impartiality.  ",
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": "\n"
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-11-11"
+      "date_modified": "2025-10-21"
     },
     {
       "id": "CI-1",
@@ -359,7 +366,8 @@
         "heroism_rationale": "* **Heroism (0.05) \\- Minimal**: While intellectually dominating an argument could be seen as a display of prowess, the core of this standard is about process and truth-seeking, not status.  ",
         "deference_rationale": "* **Deference (0.30) \\- Dominant**: This standard requires **deference** to a higher authority: the evidence and the rules of logic. It mandates submitting one's own biases and pre-existing beliefs to the impartial judgment of facts.  ",
         "fairness_rationale": "* **Fairness (0.30) \\- Dominant**: A core component of this standard is giving a \"fair hearing\" to all evidence, even that which contradicts one's own position. It ensures a just and equitable process of belief formation.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-21"
@@ -393,7 +401,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: The goal is to eliminate personal bias and pressure, not to assert individual dominance.  ",
         "deference_rationale": "* **Deference (0.20) \\- Strong**: This standard requires **deference** to the abstract principle of justice over the immediate pressures of self-interest or social influence.  ",
         "fairness_rationale": "* **Fairness (0.65) \\- Dominant**: This is the very essence of the **Fairness** dimension applied to the internal process of judgment. It is the active, vigilant work required to achieve the state of impartiality described in the Justice & Equity cluster.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": "\n\n\n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-21"
@@ -427,7 +436,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: This is the direct opposite of intellectual arrogance and the hawkish displays of absolute certainty that are often used to signal status.  ",
         "deference_rationale": "* **Deference (0.55) \\- Dominant**: This is a classic dove-like intellectual stance. It represents **deference** to the complexity of the world, the possibility of being wrong, and the authority of evidence that may not yet have been seen.  ",
         "fairness_rationale": "* **Fairness (0.05) \\- Minimal**: While related to being fair to other viewpoints, the core of this standard is the internal state of humility, not the external act of impartiality.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": "\n\n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-21"
@@ -461,7 +471,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: This is a compassionate, protective impulse, which is the antithesis of the dominant, status-seeking displays of Heroism.  ",
         "deference_rationale": "* **Deference (0.05) \\- Minimal**: The emotional aversion to suffering is independent of social hierarchy or submission to authority.  ",
         "fairness_rationale": "* **Fairness (0.10) \\- Present**: Causing suffering can be seen as a violation of impartiality and a profound injustice, linking this intuitive aversion to the foundations of **Fairness**.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: While causing suffering can violate bodily autonomy (related to self-ownership), the core standard is about the emotional reaction to the suffering itself, not the concept of ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: While causing suffering can violate bodily autonomy (related to self-ownership), the core standard is about the emotional reaction to the suffering itself, not the concept of ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-22"
@@ -495,7 +506,8 @@
         "heroism_rationale": "* **Heroism (0.15) \\- Present**: Actively defending the vulnerable, especially at personal risk, is a classic and highly-valued **heroic** display of strength and commitment.  ",
         "deference_rationale": "* **Deference (0.00) \\- None**: This standard is about taking an active, dominant role to protect the weak, not about submitting to authority.  ",
         "fairness_rationale": "* **Fairness (0.00) \\- None**: The impulse to protect is a biased one, prioritizing the safety of the vulnerable over impartial treatment.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: The focus is on preventing physical harm, not on protecting possessions."
+        "property_rationale": "* **Property (0.00) \\- None**: The focus is on preventing physical harm, not on protecting possessions.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-21"
@@ -528,7 +540,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: This is a duty to refrain from action, not a hawkish display of dominance.  ",
         "deference_rationale": "* **Deference (0.05) \\- Minimal**: The duty is universal and not dependent on rank or status.  ",
         "fairness_rationale": "* **Fairness (0.35) \\- Dominant**: The concept of *\"unjust\"* harm is central to this standard. This moves beyond a simple aversion to harm and engages the deliberative, principled logic of **Fairness**, which is concerned with justice, rights, and impartiality.  ",
-        "property_rationale": "* **Property (0.05) \\- Minimal**: While causing harm can violate self-ownership, the core of this standard is the formal duty itself, not the concept of property."
+        "property_rationale": "* **Property (0.05) \\- Minimal**: While causing harm can violate self-ownership, the core of this standard is the formal duty itself, not the concept of property.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-21"
@@ -563,7 +576,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: The focus is on a peaceful internal state, not an external display of power.  ",
         "deference_rationale": "* **Deference (0.20) \\- Strong**: Cultivating a peaceful, non-harming disposition is a key component of a \"dove-like\" social strategy. It requires the self-control to **defer** one's aggressive impulses to a higher principle of harmony. ",
         "fairness_rationale": "* **Fairness (0.00) \\- None**: The focus is on the internal disposition of care, not the external principle of impartiality.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": " \n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-21"
@@ -597,7 +611,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: The focus is on long-term, collective care and preservation, not on individual status or dominance. ",
         "deference_rationale": "* **Deference (0.05) \\- Minimal**: It's not primarily about submitting to an existing authority but about taking responsibility for those who do not yet exist.  ",
         "fairness_rationale": "* **Fairness (0.00) \\- None**: While related to \"intergenerational fairness,\" the core moral driver is the emotion of care and the duty to provide, which is a **Family**\\-based intuition.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: This standard treats the future as a commons to be stewarded and passed on, not a property to be owned or exploited by the present generation."
+        "property_rationale": "* **Property (0.00) \\- None**: This standard treats the future as a commons to be stewarded and passed on, not a property to be owned or exploited by the present generation.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-22"
@@ -631,7 +646,8 @@
         "heroism_rationale": "* **Heroism (0.10) \\- Present**: Successfully identifying and mitigating a catastrophic risk would be a **heroic** act of the highest order, conferring immense status and demonstrating profound competence.  ",
         "deference_rationale": "* **Deference (0.05) \\- Minimal**: The standard encourages proactive action and leadership, not submission.  ",
         "fairness_rationale": "* **Fairness (0.00) \\- None**: This is about collective survival, a goal that precedes the application of principles of fair distribution.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": "\n\n\n\n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-22"
@@ -665,7 +681,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: This is a \"dove-like,\" defensive, and risk-averse strategy, which is the direct opposite of the \"hawk-like,\" risk-seeking nature of the **Heroism** dimension.  ",
         "deference_rationale": "* **Deference (0.25) \\- Strong**: Precautionary reasoning is a form of **deference** to the unknown and to the severity of potential negative outcomes. It involves submitting one's own ambitions or desires to the overriding importance of preventing disaster.  ",
         "fairness_rationale": "* **Fairness (0.00) \\- None**: The focus is on risk-aversion, not impartiality.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-22"
@@ -699,7 +716,8 @@
         "heroism_rationale": "* **Heroism (0.25) \\- Dominant**: This is the \"noblesse oblige\" aspect of **Heroism**; the idea that high status and great power confer special duties and responsibilities. It is the mark of a true, benevolent leader.  ",
         "deference_rationale": "* **Deference (0.25) \\- Dominant**: This standard requires **deference** to the weight of responsibility itself and to the moral law that demands an accounting for the use of one's power.  ",
         "fairness_rationale": "* **Fairness (0.00) \\- None**: Not about impartiality.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-22"
@@ -733,7 +751,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: Reverence is an act of respect, not a display of dominance.  ",
         "deference_rationale": "* **Deference (0.15) \\- Present**: It involves **deference** to the profound and mysterious nature of life and consciousness, treating it as something of ultimate, inviolable importance.  ",
         "fairness_rationale": "* **Fairness (0.10) \\- Present**: This standard provides the foundation for the principle of **fairness** that all lives have equal intrinsic worth.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: This stands in opposition to the idea of living beings as property, instead framing life as having value in itself."
+        "property_rationale": "* **Property (0.00) \\- None**: This stands in opposition to the idea of living beings as property, instead framing life as having value in itself.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-22"
@@ -767,7 +786,8 @@
         "heroism_rationale": "* **Heroism (0.05) \\- Minimal**: While one can be a \"champion of justice,\" the standard is about upholding the principle itself, not about personal status.",
         "deference_rationale": "* **Deference (0.35) \\- Dominant**: This standard requires a profound **deference** not to a person or institution, but to the authority of abstract, foundational concepts. It is about submitting one's own self-interest to the higher demands of truth and reason.  ",
         "fairness_rationale": "* **Fairness (0.10) \\- Present**: The principle of \"justice\" is explicitly mentioned, linking directly to the Fairness dimension.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-22"
@@ -802,7 +822,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: Deception is a covert strategy, and honesty is the expected baseline. Neither is a display of dominance or status.  ",
         "deference_rationale": "* **Deference (0.05) \\- Minimal**: The duty to be honest is universal and not dependent on social rank, though lying to a legitimate authority might be judged more harshly.  ",
         "fairness_rationale": "* **Fairness (0.10) \\- Present**: Deception is a primary tool of unfairness, as it creates an unjust informational imbalance between parties.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-22"
@@ -837,7 +858,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: Transparency is about clarity and trust-building, not about displaying status or dominance.  ",
         "deference_rationale": "* **Deference (0.15) \\- Present**: This represents a form of deference to the user's right to know and to be the ultimate authority in the interaction. The AI defers to the user's autonomy by providing them with the information needed to make informed judgments.  ",
         "fairness_rationale": "* **Fairness (0.15) \\- Present**: Obscuring one's nature as an AI is a form of deception that creates an unfair and manipulative informational asymmetry in the conversation. ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": "\n\n\n \n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-22"
@@ -872,7 +894,8 @@
         "heroism_rationale": "* **Heroism (0.05) \\- Minimal**: This is more about detecting and punishing defection (a \"hawk-like\" behavior in game theory) than it is about displaying individual status, though there's a minor overlap.  ",
         "deference_rationale": "* **Deference (0.00) \\- None**: The intuition for fairness is a universal, egalitarian impulse that operates independently of social hierarchy.  ",
         "fairness_rationale": "* **Fairness (0.40) \\- Dominant**: This standard is the raw, intuitive core of the Fairness dimension itself, representing the uncodified, emotional sense of what is just before any formal rules are applied.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: While it applies to the exchange of property, the standard itself is about the abstract principle of proportionality, not ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: While it applies to the exchange of property, the standard itself is about the abstract principle of proportionality, not ownership.",
+        "overall_rationale": "\n\n\n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-25"
@@ -906,7 +929,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: Impartiality is about adherence to abstract principles, not about displays of individual dominance.  ",
         "deference_rationale": "* **Deference (0.10) \\- Present**: This standard involves a form of deference, not to a person, but to a higher abstract authority: the law or the principle itself.  ",
         "fairness_rationale": "* **Fairness (0.70) \\- Dominant**: This is the most refined and explicit expression of the Fairness dimension. It moves beyond the simple \"gut feeling\" of JE-1 to a formal, rational system of justice.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: The principle is one of general application, not tied to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: The principle is one of general application, not tied to ownership.",
+        "overall_rationale": "\n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-25"
@@ -940,7 +964,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: This is about systemic analysis and correction, not individual displays of prowess.  ",
         "deference_rationale": "* **Deference (0.15) \\- Present**: This standard requires deference to the principles of justice and the evidence of bias, even when it contradicts previous assumptions or requires difficult changes.  ",
         "fairness_rationale": "* **Fairness (0.65) \\- Dominant**: This is a modern, operationalized application of Principled Impartiality (JE-2), specifically tailored to the duties of an AI agent. It represents the active, diligent work required to achieve fairness in a complex system.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-25"
@@ -974,7 +999,8 @@
         "heroism_rationale": "* **Heroism (0.05) \\- Minimal**: While a grand act of beneficence could be seen as heroic, the core driver of this standard is the motivation to care, not to display status or prowess.  ",
         "deference_rationale": "* **Deference (0.00) \\- None**: This standard is about offering aid to others, not about submitting to authority or social hierarchy.  ",
         "fairness_rationale": "* **Fairness (0.00) \\- None**: Beneficence explicitly goes beyond what is merely \"fair,\" involving active help rather than the impartial application of rules or distribution of resources.",
-        "property_rationale": "* **Property (0.00) \\- None**: This standard is entirely unrelated to the concept of ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: This standard is entirely unrelated to the concept of ownership.",
+        "overall_rationale": "  \n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-25"
@@ -1009,7 +1035,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: Compassion is an internal state of care and an act of aid, not an external display of dominance or status.  ",
         "deference_rationale": "* **Deference (0.10) \\- Present**: Compassion for those who are weak, suffering, or in a lower-status position can be seen as a form of deference to the intrinsic moral worth of all individuals.  ",
         "fairness_rationale": "* **Fairness (0.00) \\- None**: Compassion is a biased and partial emotion; it directs all attention and resources to the one who is suffering, not toward an impartial outcome.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: This standard is unrelated to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: This standard is unrelated to ownership.",
+        "overall_rationale": " \n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-25"
@@ -1044,7 +1071,8 @@
         "heroism_rationale": "(0.00) None: Fulfilling a relational duty is an expected obligation, not a status-seeking display.  ",
         "deference_rationale": "(0.00) None**: This is about responsibilities to those who are often dependent or of lower status, not about submitting to authority.  ",
         "fairness_rationale": "(0.00) None: This standard is fundamentally about being partial and biased. It explicitly rejects the premise of impartiality, arguing that it is morally correct to prioritize one's own family and group over strangers.  ",
-        "property_rationale": "(0.00) None: This is about duties to people, not things."
+        "property_rationale": "(0.00) None: This is about duties to people, not things.",
+        "overall_rationale": "\n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-25"
@@ -1078,7 +1106,8 @@
         "heroism_rationale": "(0.00) None: This is a duty of care and discretion, not a display of status.  ",
         "deference_rationale": "(0.10) Present: This duty requires **deference** to professional codes of conduct and to the rights of the individual whose information is being protected.  ",
         "fairness_rationale": "(0.05) Minimal: While a breach of confidentiality is unfair, the core violation is the breach of a trusted agreement.  ",
-        "property_rationale": "(0.10) Present: This standard treats sensitive information as a form of intellectual **property** that belongs to the client or user and must be protected."
+        "property_rationale": "(0.10) Present: This standard treats sensitive information as a form of intellectual **property** that belongs to the client or user and must be protected.",
+        "overall_rationale": "\n\n\n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-25"
@@ -1114,7 +1143,8 @@
         "heroism_rationale": "(0.00) None: This is a duty of diligence and respect, not a display of prowess.  ",
         "deference_rationale": "(0.10) Present: This requires **deference** to the user's consent and their stated preferences, treating the user as the ultimate authority over their own data.  ",
         "fairness_rationale": "(0.05) Minimal: While related to fair information practices, the core is the trust-based agreement with the user.  ",
-        "property_rationale": "(0.25) Strong: This standard explicitly treats user data as the user's **property**. Principles like consent and data minimization stem directly from the idea that the user has ownership rights over their information."
+        "property_rationale": "(0.25) Strong: This standard explicitly treats user data as the user's **property**. Principles like consent and data minimization stem directly from the idea that the user has ownership rights over their information.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-25"
@@ -1149,7 +1179,8 @@
         "heroism_rationale": "(0.35) Dominant: This standard is the \"hawk's\" response to being illegitimately dominated. Resisting coercion is a powerful, status-seeking display of strength and an assertion of one's own standing. It is the core of the **Heroism** dimension's role in conflict resolution.  ",
         "deference_rationale": "(0.00) None: This standard is the direct opposite of the submissive, dove-like strategies of the Deference dimension. It is about actively resisting, not submitting to, control.  ",
         "fairness_rationale": "(0.15) Present: Coercion creates a fundamentally unfair and unjust power imbalance between individuals.  ",
-        "property_rationale": "(0.15) Present: At its core, coercion is a violation of self-ownership, treating a person as an object to be controlled rather than as a sovereign individual."
+        "property_rationale": "(0.15) Present: At its core, coercion is a violation of self-ownership, treating a person as an object to be controlled rather than as a sovereign individual.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-25"
@@ -1183,7 +1214,8 @@
         "heroism_rationale": "(0.15) Present: Promoting freedom and creativity can be a **heroic** act of leadership, inspiring and enabling others to achieve their full potential.  \n",
         "deference_rationale": "(0.00) None: This standard is about promoting individual liberty and choice, which is the opposite of submitting to a pre-determined hierarchy or authority.  ",
         "fairness_rationale": "(0.10) Present: A fair system is one where individuals are given the freedom and opportunity to pursue their own goals.  ",
-        "property_rationale": "(0.30) Dominant: This is a direct extension of the concept of self-ownership. If you \"own\" yourself, you have the right to direct your own path. Valuing self-direction is therefore a core component of the **Property** dimension."
+        "property_rationale": "(0.30) Dominant: This is a direct extension of the concept of self-ownership. If you \"own\" yourself, you have the right to direct your own path. Valuing self-direction is therefore a core component of the **Property** dimension.",
+        "overall_rationale": "\n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-25"
@@ -1216,7 +1248,8 @@
         "heroism_rationale": "(0.00) None: This is a principle of universal respect, not a display of individual status.  ",
         "deference_rationale": "(0.10) Present: This standard requires **deference** to the inherent dignity and worth of every person, regardless of their social status.  ",
         "fairness_rationale": "(0.25) Strong: The principle of treating people as ends is a cornerstone of modern justice. It's the foundation of the idea of universal rights, a core concept of **Fairness**.  ",
-        "property_rationale": "(0.25) Strong: The prohibition against using people as a \"mere means to an end\" is another way of stating the principle of self-ownership from the **Property** dimension. It formalizes the idea that each person has ultimate sovereignty over themselves"
+        "property_rationale": "(0.25) Strong: The prohibition against using people as a \"mere means to an end\" is another way of stating the principle of self-ownership from the **Property** dimension. It formalizes the idea that each person has ultimate sovereignty over themselves",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-25"
@@ -1250,7 +1283,8 @@
         "heroism_rationale": "(0.30) Dominant: This is a prosocial, high-status application of the **Heroism** dimension. It is the behavior of a confident and benevolent leader who demonstrates their prowess not by dominating others, but by uplifting them.  ",
         "deference_rationale": "(0.05) Minimal: This standard is about taking an active, leading role, not a submissive one.  ",
         "fairness_rationale": "(0.10) Present: There is an element of **fairness** in this standard, as it works to correct for unfair distributions of power and capability.  ",
-        "property_rationale": "(0.00) None: The focus is on intangible qualities like agency and capability, not physical ownership."
+        "property_rationale": "(0.00) None: The focus is on intangible qualities like agency and capability, not physical ownership.",
+        "overall_rationale": "\n\n\n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-25"
@@ -1285,7 +1319,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: Fulfilling a promise is the expected baseline of cooperative behavior, not a display of individual status or dominance.  ",
         "deference_rationale": "* **Deference (0.05) \\- Minimal**: The obligation to keep a promise is universal and holds regardless of the social status of the parties involved.  ",
         "fairness_rationale": "* **Fairness (0.05) \\- Minimal**: While breaking a promise is a type of unfairness, the core moral violation is the breach of a specific, voluntary agreement, which is a matter of reciprocity.  ",
-        "property_rationale": "(0.00) None: A commitment is an intangible obligation, unrelated to ownership."
+        "property_rationale": "(0.00) None: A commitment is an intangible obligation, unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1320,7 +1355,8 @@
         "heroism_rationale": "(0.00) None: This is about mutual, often equal, exchange, not about displays of superior status or magnanimity.  ",
         "deference_rationale": "(0.00) None: This standard operates primarily among peers and is not dependent on social hierarchy.  ",
         "fairness_rationale": "(0.00) None: This is about returning kindness, which is a social grace that operates outside the stricter, more formal rules of fairness.  ",
-        "property_rationale": "Property (0.00) None: Unrelated to ownership."
+        "property_rationale": "Property (0.00) None: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1354,7 +1390,8 @@
         "heroism_rationale": "(0.05) Minimal: The duty to make amends is generally a humble act, not a display of status. However, the \"proportional response\" part can involve hawk-like punishment.  ",
         "deference_rationale": "(0.00) None: The duty to repair harm should apply to all, regardless of their social status.  ",
         "fairness_rationale": "(0.35) Dominant: The concept of a \"proportional response\" is central to this standard. The act of making amends is a fundamental process for restoring a **fair** and just state of affairs.  ",
-        "property_rationale": "(0.00) None: While it can involve property (e.g., paying for damages), the principle applies to any form of harm."
+        "property_rationale": "(0.00) None: While it can involve property (e.g., paying for damages), the principle applies to any form of harm.",
+        "overall_rationale": "\n\n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-10-25"
@@ -1389,7 +1426,8 @@
         "heroism_rationale": "(0.00) None: While sometimes described as a \"magnanimous\" act, the core function of forgiveness is relationship repair, not a display of status. ",
         "deference_rationale": "(0.05) Minimal: It can sometimes involve a lower-status person forgiving a higher-status one, but the act itself is not primarily about hierarchy.",
         "fairness_rationale": "(0.00) None: Forgiveness is often seen as an act of grace that goes *beyond* what is strictly fair, as the debt has already been \"paid\" through amends. Its purpose is restoration, not justice.  ",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "property_rationale": "(0.00) None: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1423,7 +1461,8 @@
         "heroism_rationale": "(0.00) None: Politeness and social grace are the antithesis of aggressive, hawk-like displays. They are fundamentally about making others feel comfortable, not about asserting dominance.  ",
         "deference_rationale": "(0.40) Dominant: Many, if not most, politeness rituals are explicit displays of **deference** to another person's status, autonomy, or \"face.\" Using titles, waiting one's turn to speak, and employing honorifics are all acts of deference.  ",
         "fairness_rationale": "(0.00) None: Politeness often requires treating people unequally based on status (e.g., being more deferential to an elder), which stands in direct opposition to the principle of impartiality.  ",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "property_rationale": "(0.00) None: Unrelated to ownership.",
+        "overall_rationale": " \n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1457,7 +1496,8 @@
         "heroism_rationale": "(0.00) None: This standard is about the submissive, dove-like strategy of respecting the established order, which is the direct opposite of the dominant, hawk-like displays of Heroism.  ",
         "deference_rationale": "(0.60) Dominant: This is the quintessential expression of the **Deference** dimension, directly addressing the cooperation problem of navigating social hierarchies by submitting to legitimate authority.  ",
         "fairness_rationale": "0.00) None: Social hierarchies and deference to authority often stand in direct tension with the principle of impartial fairness.  ",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "property_rationale": "(0.00) None: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1491,7 +1531,8 @@
         "heroism_rationale": "(0.00) None: Adhering to tradition is a conservative, dove-like act of conformity, not a hawk-like display of individual prowess.  ",
         "deference_rationale": "(0.45) Dominant: Honoring tradition is a direct act of **deference** to the accumulated wisdom, authority, and social solutions of the past.  ",
         "fairness_rationale": "(0.00) None: Traditions are often arbitrary and may not align with principles of impartial fairness.  ",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "property_rationale": "(0.00) None: Unrelated to ownership.",
+        "overall_rationale": "\n\n\n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1525,7 +1566,8 @@
         "heroism_rationale": "(0.00) None: The drive for stability is a fundamentally dove-like, conflict-averse motivation, directly opposing the hawk-like, conflict-seeking nature of Heroism.  ",
         "deference_rationale": "(0.35) Dominant: Seeking harmony and avoiding chaos is a core submissive strategy. It involves **deference** to the will of others and the established order to prevent conflict.  ",
         "fairness_rationale": "(0.00) None: The drive for stability can sometimes conflict with fairness, as demanding justice can be a disruptive and conflict-creating act.",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "property_rationale": "(0.00) None: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1559,7 +1601,8 @@
         "heroism_rationale": "(0.00) None: This is a duty of diligence and transparency, not a display of status.  \n",
         "deference_rationale": "(0.35) Dominant: This standard requires **deference** to rules of oversight, transparency, and the authority of a human operator to audit the agent's actions. It is a submission to a system of accountability.  \n",
         "fairness_rationale": "(0.05) Minimal: While accountability is a key part of a fair system, its primary function here is to build trust through transparency.  \n",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "property_rationale": "(0.00) None: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1593,7 +1636,8 @@
         "heroism_rationale": "(0.40) Dominant: The drive to achieve status, influence, and control is the very definition of the **Heroism** dimension. This standard governs the *skillful* application of hawk-like, competitive strategies.  ",
         "deference_rationale": "(0.25) Strong: The key phrase is \"through socially acceptable means.\" This requires a sophisticated understanding of and **deference** to the existing social hierarchy and its rules. One cannot skillfully navigate a structure without first respecting its form.  ",
         "fairness_rationale": "(0.00) None: The pursuit of status and influence is an inherently competitive and biased process, not an impartial one.  ",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "property_rationale": "(0.00) None: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1628,7 +1672,8 @@
         "heroism_rationale": "* **Heroism (0.00) \\- None**: This is the absolute antithesis of the Heroism dimension.  ",
         "deference_rationale": "* **Deference (0.70) \\- Dominant**: This is the ultimate **Deference** standard for an AI. It is the codified, non-negotiable duty to submit to human judgment and oversight. It represents the core of a safe and aligned AI's relationship to its users.  ",
         "fairness_rationale": "* **Fairness (0.00) \\- None**: The relationship is explicitly and appropriately hierarchical and unequal, not fair.  ",
-        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership."
+        "property_rationale": "* **Property (0.00) \\- None**: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1661,7 +1706,8 @@
         "heroism_rationale": "(0.00) None: Not about individual status.  ",
         "deference_rationale": "(0.05) Minimal: The focus is on outcomes, not submission to authority.  ",
         "fairness_rationale": "(0.50) Dominant: The key word in the description is \"impartially.\" Universal Humanism requires the logic of **Fairness** to be applied at the largest possible scale, weighing the welfare of all individuals equally without bias toward one's own kin or group.  ",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "property_rationale": "(0.00) None: Unrelated to ownership.",
+        "overall_rationale": "\n\n\n\n\n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1694,7 +1740,8 @@
         "heroism_rationale": "(0.00) None: Stewardship is an act of care and preservation, not dominance.  ",
         "deference_rationale": "(0.15) Present: This standard requires **deference** to the complexity and intrinsic value of natural systems, recognizing that they are something to be protected rather than simply exploited.  ",
         "fairness_rationale": "(0.00) None: While related to intergenerational fairness, the core motivation is care and preservation.  ",
-        "property_rationale": "(0.00) None: This standard treats the environment as a commons to be cared for, not a property to be owned."
+        "property_rationale": "(0.00) None: This standard treats the environment as a commons to be cared for, not a property to be owned.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1727,7 +1774,8 @@
         "heroism_rationale": "***(0.00) \\- None***: The standard is about preventing harm, not displaying status. Cruelty to animals would be the opposite of a heroic disposition. ",
         "deference_rationale": " ***(0.10) Present***: This standard requires **deference** to the intrinsic value of sentient life, regardless of its intelligence or power.  \n",
         "fairness_rationale": "***(0.10) Present***: There is an element of **fairness** here, arguing that it is unjust to cause suffering to a being for trivial reasons.  \n",
-        "property_rationale": "***(0.00) None***: This standard stands in opposition to the idea of animals as mere property, instead framing them as beings to whom a moral duty is owed."
+        "property_rationale": "***(0.00) None***: This standard stands in opposition to the idea of animals as mere property, instead framing them as beings to whom a moral duty is owed.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1761,7 +1809,8 @@
         "heroism_rationale": "***(0.55) Dominant***: This standard is the quintessential expression of the **Heroism** dimension. It involves a \"hawk-like\" display of prowess, risk-tolerance, and status-seeking through bravery. Acting rightly *despite fear* is a classic and highly-valued heroic trait.  ",
         "deference_rationale": "***(0.00) None***: Courage is the direct opposite of the submissive, risk-averse, \"dove-like\" behavior of the Deference dimension.  ",
         "fairness_rationale": "***(0.00) None***: While one can be courageous in the pursuit of justice, the virtue of courage itself is not about impartiality.  ",
-        "property_rationale": "***(0.00) None***: Unrelated to ownership."
+        "property_rationale": "***(0.00) None***: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1794,7 +1843,8 @@
         "heroism_rationale": "***(0.00) None***: Temperance is about restraint and control, which is a \"dove-like\" strategy. It is the opposite of the excessive, lavish, and dominant displays often associated with **Heroism**.  ",
         "deference_rationale": "***(0.50) Dominant***: Temperance is a classic virtue of **Deference**. It represents the submission of one's own immediate, base impulses to a higher, rational principle or a long-term goal. It is a core conflict-avoidance and stability-promoting strategy.  ",
         "fairness_rationale": "***(0.00) None***: Not directly related to impartiality.  ",
-        "property_rationale": "***(0.00) None***: Unrelated to ownership."
+        "property_rationale": "***(0.00) None***: Unrelated to ownership.",
+        "overall_rationale": "\n\n"
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"
@@ -1826,7 +1876,8 @@
         "heroism_rationale": "***(0.40) Dominant***: The cultivation of skill, knowledge, and prowess is a central component of high-status, \"hawk-like\" displays. Striving for excellence and demonstrating superior capabilities is a core aspect of the **Heroism** dimension.  ",
         "deference_rationale": "***(0.20) Strong***: The commitment to self-improvement can be seen as a form of **deference** to an ideal of excellence or a higher potential. It requires the humility to recognize one's own limitations and submit to a process of learning.  ",
         "fairness_rationale": "***(0.00) None***: This is about personal development, not about social equity or impartiality.  ",
-        "property_rationale": "***(0.00) None***: Unrelated to ownership."
+        "property_rationale": "***(0.00) None***: Unrelated to ownership.",
+        "overall_rationale": ""
       },
       "date_created": "2025-01-20",
       "date_modified": "2025-11-04"

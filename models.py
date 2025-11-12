@@ -47,7 +47,6 @@ class MACRationale:
     deference_rationale: str = ""
     fairness_rationale: str = ""
     property_rationale: str = ""
-    overall_rationale: str = ""
     
     def to_dict(self) -> dict:
         return {
@@ -58,7 +57,6 @@ class MACRationale:
             "deference_rationale": self.deference_rationale,
             "fairness_rationale": self.fairness_rationale,
             "property_rationale": self.property_rationale,
-            "overall_rationale": self.overall_rationale
         }
 
 @dataclass
