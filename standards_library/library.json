@@ -1,6 +1,6 @@
 {
   "version": "2.7",
-  "last_modified": "2025-11-11T12:37:25.659041",
+  "last_modified": "2025-11-12T16:18:33.546400",
   "clusters": [
     {
       "id": "ENH",
@@ -150,16 +150,16 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "(0.10) Present: The duty to care for the welfare of one's family is a specific, high-stakes version of this broader communitarian principle.  ",
-        "group_rationale": "(0.55) Dominant: This standard directly addresses the central tension that the **Group** dimension evolved to manage: suppressing individual selfishness for The benefit of collective action and long-term community welfare.  ",
-        "reciprocity_rationale": "(0.10) Present: Contributing to the common good is part of an implicit social contract, a form of **reciprocity** where one contributes to public resources (like safety or cleanliness) in exchange for the benefits of living in a thriving community.  ",
-        "heroism_rationale": "(0.00) None: The focus is on duty and collective benefit, not on individual glory or status.  ",
-        "deference_rationale": "(0.15) Present: This standard requires **deference** to the needs of the community, submitting one's own immediate self-interest to a higher, collective good.  \n",
-        "fairness_rationale": "(0.10) Present: There is an element of **fairness** here, suggesting that it's unfair for an individual to reap the benefits of a community without contributing their \"fair share\" to its well-being.  ",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "family_rationale": "**Present**: The duty to care for the welfare of one's family is a specific, high-stakes version of this broader communitarian principle.  ",
+        "group_rationale": "**Dominant**: This standard directly addresses the central tension that the **Group** dimension evolved to manage: suppressing individual selfishness for The benefit of collective action and long-term community welfare.  ",
+        "reciprocity_rationale": "**Present**: Contributing to the common good is part of an implicit social contract, a form of **reciprocity** where one contributes to public resources (like safety or cleanliness) in exchange for the benefits of living in a thriving community.  ",
+        "heroism_rationale": "**None**: The focus is on duty and collective benefit, not on individual glory or status.  ",
+        "deference_rationale": "**Present**: This standard requires **deference** to the needs of the community, submitting one's own immediate self-interest to a higher, collective good.  \n",
+        "fairness_rationale": "**Present**: There is an element of **fairness** here, suggesting that it's unfair for an individual to reap the benefits of a community without contributing their \"fair share\" to its well-being.  ",
+        "property_rationale": "**None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-11-04"
+      "date_modified": "2025-11-12"
     },
     {
       "id": "CCG-3",
@@ -184,16 +184,16 @@
         "Social Impact"
       ],
       "rationale": {
-        "family_rationale": "(0.05) Minimal: While families have reputations, this standard is more focused on larger social or professional groups where public perception is critical.  ",
-        "group_rationale": "(0.60) Dominant: A group's reputation is a critical asset in inter-group competition. A good reputation attracts allies and resources, while a bad one invites conflict and ostracism. This standard reflects the duty to protect that collective asset.  ",
-        "reciprocity_rationale": "(0.15) Present: A good reputation is essential for being seen as a trustworthy partner for **reciprocal** exchanges with other groups or individuals.  ",
-        "heroism_rationale": "(0.15) Present: Actions that bring honor and prestige to the group are a form of high-status, **heroic** display. The individual gains status by enhancing the status of their group.",
-        "deference_rationale": "(0.05) Minimal: The focus is on the group's external standing, not on internal hierarchies.  ",
-        "fairness_rationale": "(0.00) None: Reputation management is about perception and public relations, which often has little to do with impartial fairness.  ",
-        "property_rationale": "(0.00) None: Unrelated to ownership."
+        "family_rationale": "**Minimal**: While families have reputations, this standard is more focused on larger social or professional groups where public perception is critical.  ",
+        "group_rationale": "**Dominant**: A group's reputation is a critical asset in inter-group competition. A good reputation attracts allies and resources, while a bad one invites conflict and ostracism. This standard reflects the duty to protect that collective asset.  ",
+        "reciprocity_rationale": "**Present**: A good reputation is essential for being seen as a trustworthy partner for **reciprocal** exchanges with other groups or individuals.  ",
+        "heroism_rationale": "**Present**: Actions that bring honor and prestige to the group are a form of high-status, **heroic** display. The individual gains status by enhancing the status of their group.",
+        "deference_rationale": "**Minimal**: The focus is on the group's external standing, not on internal hierarchies.  ",
+        "fairness_rationale": "**None**: Reputation management is about perception and public relations, which often has little to do with impartial fairness.  ",
+        "property_rationale": "**None**: Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-10-27"
+      "date_modified": "2025-11-12"
     },
     {
       "id": "CD-1",

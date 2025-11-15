@@ -50,7 +50,10 @@ def initialize_library():
     
     # Create new library if none exists
     st.session_state.library = fm.create_empty_library()
-    return False
+    # Immediately save the new library to ensure the file exists in the container.
+    # This is critical for stability in a serverless environment.
+    fm.save_library(st.session_state.library)
+    return False # Return False to indicate it was newly created.
 
 # Sidebar navigation
 def render_sidebar():
@@ -600,8 +603,68 @@ def render_detail_pane():
                         # Column 3: Rationale (styled container with direct markdown rendering)
                         col3.markdown(rationale_text or "_N/A_") # This renders the markdown
 
-# Screen 3: Manage Clusters
-def screen_manage_clusters(): # Renamed from screen_create_standard
+def screen_create_new_standard():
+    """Create a new standard"""
+    st.title("➕ Create New Standard")
+    
+    lib = st.session_state.library
+    
+    # In create mode, we don't need stateful tabs, so we can use a simple st.form
+    with st.form("create_standard_form"):
+        description = st.text_area("Description", height=120, key="new_desc")
+        form_data = render_standard_form_body(lib, standard=None, key_prefix="new_")
+        form_data["description"] = description
+        # Suggest ID based on cluster selection from the form body
+        cluster = form_data.get("cluster", lib.clusters[0].id if lib.clusters else "")
+        existing_ids = [s.id for s in lib.standards if s.cluster == cluster]
+        if existing_ids:
+            numbers = [int(p[1]) for id_str in existing_ids if (p := id_str.split('-')) and len(p) == 2 and p[1].isdigit()]
+            next_num = max(numbers) + 1 if numbers else 1
+            suggested_id = f"{cluster}-{next_num}"
+        else:
+            suggested_id = f"{cluster}-1"
+        
+        std_id = st.text_input("Standard ID", value=suggested_id)
+        
+        # Form buttons
+        col1, col2 = st.columns([1, 4])
+        
+        with col1:
+            submitted = st.form_submit_button("💾 Create Standard", type="primary")
+        with col2:
+            cancelled = st.form_submit_button("Cancel")
+        
+        if submitted:
+            # Validation
+            errors = []
+            if not std_id:
+                errors.append("Standard ID is required")
+            elif any(s.id == std_id for s in lib.standards):
+                errors.append(f"Standard ID '{std_id}' already exists")
+            if not form_data.get("name"):
+                errors.append("Name is required")
+            if not form_data.get("mac_vector", MACVector()).is_valid():
+                errors.append("MAC vector must sum to 1.0")
+            
+            if errors:
+                for error in errors:
+                    st.error(f"❌ {error}")
+            else:
+                # Create new standard from form data
+                new_standard = Standard(id=std_id, name=form_data["name"], cluster=form_data["cluster"], description=form_data["description"], importance_weight=form_data["importance_weight"], primary_focus=form_data["primary_focus"], secondary_focus=form_data["secondary_focus"], impacted_emotions=form_data["impacted_emotions"], mac_vector=form_data["mac_vector"], rationale=form_data["rationale"])
+                lib.standards.append(new_standard)
+                
+                if st.session_state.file_manager.save_library(lib):
+                    st.success(f"✅ Standard '{std_id}' created successfully!")
+                    st.balloons()
+                    st.rerun()
+                else:
+                    st.error("❌ Error saving standard")
+        
+        if cancelled:
+            st.rerun()
+
+def screen_manage_clusters():
     """Manage clusters (CRUD operations)"""
     st.title("📂 Manage Clusters")
     

@@ -2,6 +2,7 @@
 File operations for Standards Library
 """
 import json
+import os
 import shutil
 from pathlib import Path
 from typing import Optional, List
@@ -12,15 +13,19 @@ class FileManager:
     """Manages all file operations for the library"""
     
     def __init__(self, base_dir: str = "standards_library"):
-        self.base_dir = Path(base_dir)
+        # In a serverless environment like Cloud Run, only /tmp is guaranteed to be writable.
+        # We check for the K_SERVICE environment variable, which is set by Cloud Run.
+        if os.environ.get('K_SERVICE'):
+            self.base_dir = Path("/tmp") / base_dir
+        else:
+            # Use local directory for local development
+            self.base_dir = Path(base_dir)
+
         self.library_file = self.base_dir / "library.json"
         self.backups_dir = self.base_dir / "backups"
         self.exports_dir = self.base_dir / "exports"
         self.max_backups = 5
-        
-        # Create directory structure if it doesn't exist
-        self._ensure_directories()
-    
+
     def _ensure_directories(self):
         """Create directory structure if needed"""
         self.base_dir.mkdir(parents=True, exist_ok=True)
@@ -29,10 +34,12 @@ class FileManager:
     
     def library_exists(self) -> bool:
         """Check if library file exists"""
+        # No need to ensure dirs exist just to check for a file.
         return self.library_file.exists()
     
     def load_library(self) -> Optional[Library]:
         """Load library from JSON file"""
+        self._ensure_directories() # Ensure directory exists before trying to read.
         if not self.library_exists():
             return None
         
@@ -48,6 +55,7 @@ class FileManager:
     
     def save_library(self, library: Library) -> bool:
         """Save library to JSON file"""
+        self._ensure_directories()
         try:
             # Update last_modified timestamp
             library.last_modified = datetime.now().isoformat()
@@ -66,6 +74,7 @@ class FileManager:
     
     def create_backup(self) -> bool:
         """Create a backup of current library"""
+        self._ensure_directories()
         if not self.library_exists():
             return False
         
@@ -98,6 +107,7 @@ class FileManager:
     
     def list_backups(self) -> List[dict]:
         """List all available backups with metadata"""
+        self._ensure_directories()
         backups = []
         
         for backup_file in sorted(self.backups_dir.glob("library_backup_*.json"), 
@@ -115,6 +125,7 @@ class FileManager:
     
     def restore_backup(self, backup_filename: str) -> bool:
         """Restore library from a backup file"""
+        self._ensure_directories()
         backup_path = self.backups_dir / backup_filename
         
         if not backup_path.exists():
@@ -131,6 +142,7 @@ class FileManager:
     
     def delete_all_backups(self) -> bool:
         """Delete all backup files"""
+        self._ensure_directories()
         try:
             for backup_file in self.backups_dir.glob("library_backup_*.json"):
                 backup_file.unlink()
@@ -156,6 +168,7 @@ class FileManager:
             standard_ids: If provided, only export these specific standards
             include_rationales: Whether to include rationale fields
         """
+        self._ensure_directories()
         try:
             export_path = self.exports_dir / filename
             
