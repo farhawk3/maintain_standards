@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Standards Library Editor</title>
+  </head>
+  <body>
+    <h1>Standards Library Editor</h1>
+    <p>Open the browser's developer console to see the data.</p>
+
+    <script>
+      // This script runs when the page loads
+      async function fetchStandards() {
+        try {
+          const response = await fetch("http://127.0.0.1:5000/api/standards");
+          const standards = await response.json();
+          console.log("Successfully fetched standards:", standards);
+        } catch (error) {
+          console.error("Failed to fetch standards:", error);
+        }
+      }
+
+      fetchStandards();
+    </script>
+  </body>
+</html>

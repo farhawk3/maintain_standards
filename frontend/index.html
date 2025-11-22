@@ -1,0 +1,349 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moral Standards Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1>Moral Standards Manager</h1>
+    </header>
+    <div class="library-stats">
+      <span id="cluster-count">Clusters: 0</span> |
+      <span id="standard-count">Standards: 0</span>
+    </div>
+    <main class="two-panel-layout">
+      <div id="left-panel">
+        <div class="left-panel-header">
+          <!-- Menu is now permanently on the left of the title -->
+          <div class="system-actions-menu">
+            <button id="system-menu-btn" class="kebab-btn">⋮</button>
+            <div id="system-menu-dropdown" class="dropdown-content hidden">
+              <a href="#" id="menu-create-standard">Create New Standard</a>
+              <a href="#" id="menu-edit-clusters">Edit Clusters</a>
+              <hr />
+              <a href="#" id="menu-backup-restore">Backup & Restore</a>
+              <hr />
+              <a href="#" id="menu-import-export">Import & Export</a>
+            </div>
+          </div>
+          <h2>Available Standards</h2>
+        </div>
+        <div class="search-container">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search standards by ID or name..."
+          />
+        </div>
+        <div id="filter-control-panel">
+          <h4>Filter by:</h4>
+          <div class="radio-group-vertical">
+            <div class="radio-item">
+              <input
+                type="radio"
+                id="filter-none"
+                name="filter-type"
+                value="none"
+                checked
+              />
+              <label for="filter-none">None</label>
+            </div>
+            <div class="radio-item">
+              <input
+                type="radio"
+                id="filter-cluster"
+                name="filter-type"
+                value="cluster"
+              />
+              <label for="filter-cluster">by Cluster</label>
+            </div>
+            <div class="radio-item">
+              <input
+                type="radio"
+                id="filter-focus"
+                name="filter-type"
+                value="focus"
+              />
+              <label for="filter-focus">by Focus</label>
+            </div>
+            <div class="radio-item">
+              <input
+                type="radio"
+                id="filter-dimension"
+                name="filter-type"
+                value="dimension"
+              />
+              <label for="filter-dimension">by Appraisal Dimension</label>
+            </div>
+          </div>
+        </div>
+        <div id="active-filter-display" class="hidden"></div>
+        <ul id="standards-list"></ul>
+      </div>
+      <div id="right-panel">
+        <div id="detail-view-placeholder">
+          <p>Select a standard from the list to see its details.</p>
+        </div>
+        <div id="detail-view-content" class="hidden">
+          <div class="detail-header">
+            <h2 id="detail-title"></h2>
+            <div id="detail-actions">
+              <button id="edit-btn">Edit</button>
+              <button id="save-btn" class="hidden">Save</button>
+              <button id="cancel-btn" class="hidden">Cancel</button>
+              <button id="delete-btn" class="hidden">Delete</button>
+            </div>
+          </div>
+          <p id="detail-description"></p>
+          <div class="tab-nav">
+            <button class="tab-link active" data-tab="tab-core">
+              Core Attributes
+            </button>
+            <button class="tab-link" data-tab="tab-vector">MAC Vector</button>
+            <button class="tab-link" data-tab="tab-emotion">
+              Appraisal Dimensions
+            </button>
+          </div>
+          <div id="tab-core" class="tab-content active"></div>
+          <div id="tab-vector" class="tab-content"></div>
+          <div id="tab-emotion" class="tab-content"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Generic Filter Modal -->
+    <div id="filter-modal" class="modal-backdrop hidden">
+      <div class="modal-content">
+        <h2 id="filter-modal-title">Select Filter Options</h2>
+        <div id="filter-modal-options" class="export-filter-container">
+          <!-- Checkbox/Radio options will be dynamically inserted here -->
+        </div>
+        <div class="modal-actions">
+          <button id="filter-modal-cancel-btn">Cancel</button>
+          <button id="filter-modal-confirm-btn">Apply Filter</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Create Standard Modal -->
+    <div id="create-modal" class="modal-backdrop hidden">
+      <div class="modal-content">
+        <h2>Create New Standard</h2>
+        <form id="create-standard-form">
+          <div class="form-row">
+            <div class="form-control">
+              <label for="create-id">Standard ID</label>
+              <input
+                type="text"
+                id="create-id"
+                name="id"
+                placeholder="e.g., VC-4"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="create-cluster">Cluster</label>
+              <select id="create-cluster" name="cluster" required></select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-control">
+              <label for="create-name">Name</label>
+              <input
+                type="text"
+                id="create-name"
+                name="name"
+                placeholder="Standard Name"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-control">
+              <label for="create-description">Description</label>
+              <textarea
+                id="create-description"
+                name="description"
+                placeholder="Standard Description"
+                required
+                rows="3"
+              ></textarea>
+            </div>
+          </div>
+        </form>
+        <div class="modal-actions">
+          <button id="create-btn">Create Standard</button>
+          <button id="cancel-create-btn">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backup & Restore Modal -->
+    <div id="backup-modal" class="modal-backdrop hidden">
+      <div class="modal-content">
+        <h2>Backup & Restore</h2>
+        <div class="backup-restore-content">
+          <!-- Backup Section -->
+          <div class="br-section">
+            <h3>Backup</h3>
+            <p>Create a new timestamped backup of the current library.</p>
+            <button id="create-backup-btn">Create New Backup</button>
+            <h4>Existing Backups:</h4>
+            <ul id="backup-list">
+              <!-- Backup files will be listed here -->
+            </ul>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button id="close-backup-modal-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Generic Confirmation Modal -->
+    <div id="confirm-modal" class="modal-backdrop hidden">
+      <div class="modal-content confirm-modal-content">
+        <h3 id="confirm-modal-title">Confirm Action</h3>
+        <p id="confirm-modal-message"></p>
+        <div class="modal-actions">
+          <button id="confirm-modal-cancel-btn">Cancel</button>
+          <button id="confirm-modal-confirm-btn" class="btn-danger">
+            Confirm
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Generic Alert Modal -->
+    <div id="alert-modal" class="modal-backdrop hidden">
+      <div class="modal-content alert-modal-content">
+        <h3 id="alert-modal-title">Info</h3>
+        <p id="alert-modal-message"></p>
+        <div class="modal-actions">
+          <button id="alert-modal-ok-btn">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Import & Export Modal -->
+    <div id="export-modal" class="modal-backdrop hidden">
+      <div class="modal-content export-modal-content">
+        <h2>Import & Export</h2>
+        <div class="export-content">
+          <!-- Export Section -->
+          <div class="br-section">
+            <h3>Export Library</h3>
+            <div class="form-control">
+              <label for="export-filename">Export Filename (.json)</label>
+              <input type="text" id="export-filename" value="library_export" />
+            </div>
+            <div class="form-control">
+              <label>Filtering Options</label>
+              <div class="checkbox-group">
+                <input type="checkbox" id="export-exclude-rationales" />
+                <label for="export-exclude-rationales"
+                  >Exclude Rationale Data</label
+                >
+              </div>
+            </div>
+            <div class="form-control">
+              <label>Selection Method</label>
+              <div class="radio-group">
+                <input
+                  type="radio"
+                  id="export-by-cluster"
+                  name="export-method"
+                  value="cluster"
+                  checked
+                />
+                <label for="export-by-cluster">By Cluster</label>
+                <input
+                  type="radio"
+                  id="export-by-standard"
+                  name="export-method"
+                  value="standard"
+                />
+                <label for="export-by-standard">By Individual Standard</label>
+              </div>
+            </div>
+            <div
+              id="export-cluster-list-container"
+              class="export-filter-container"
+            ></div>
+            <div
+              id="export-standard-list-container"
+              class="export-filter-container hidden"
+            ></div>
+          </div>
+          <!-- Import Section (Stubbed) -->
+          <div class="br-section">
+            <h3>Import from File</h3>
+            <p>
+              Import clusters and standards from a JSON file. Existing items
+              with the same ID will be updated.
+            </p>
+            <label for="import-file-input" class="sr-only"
+              >Select JSON file to import</label
+            >
+            <input type="file" id="import-file-input" accept=".json" />
+            <button id="import-btn" class="hidden">Import File</button>
+          </div>
+        </div>
+        <div class="modal-actions">
+          <button id="export-btn">Export Library</button>
+          <button id="close-export-modal-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cluster Maintenance Modal -->
+    <div id="cluster-main-modal" class="modal-backdrop hidden">
+      <div class="modal-content">
+        <h2>Cluster Maintenance</h2>
+        <button id="show-create-cluster-form-btn">Create New Cluster</button>
+        <ul id="cluster-maintenance-list">
+          <!-- Cluster list will be rendered here -->
+        </ul>
+        <div class="modal-actions">
+          <button id="close-cluster-main-modal-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cluster Create/Edit Form Modal -->
+    <div id="cluster-edit-modal" class="modal-backdrop hidden">
+      <div class="modal-content">
+        <h2 id="cluster-form-title">Edit Cluster</h2>
+        <form id="cluster-edit-form">
+          <div class="form-control">
+            <label for="cluster-edit-id">ID</label>
+            <input type="text" id="cluster-edit-id" required />
+          </div>
+          <div class="form-control">
+            <label for="cluster-edit-name">Name</label>
+            <input type="text" id="cluster-edit-name" required />
+          </div>
+          <div class="form-control">
+            <label for="cluster-edit-description">Description</label>
+            <textarea id="cluster-edit-description" rows="3"></textarea>
+          </div>
+          <div class="form-control">
+            <label for="cluster-edit-order">Order</label>
+            <input type="number" id="cluster-edit-order" min="1" required />
+          </div>
+        </form>
+        <div class="modal-actions">
+          <button id="cluster-form-cancel-btn">Cancel</button>
+          <button id="cluster-form-save-btn">Save Changes</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

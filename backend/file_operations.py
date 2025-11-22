@@ -5,23 +5,24 @@ import json
 import os
 import shutil
 from pathlib import Path
-from typing import Optional, List
+from typing import Optional, List, Dict, Any
 from datetime import datetime
 from models import Library, Standard, Cluster, MACVector, MACRationale
 
 class FileManager:
     """Manages all file operations for the library"""
     
-    def __init__(self, base_dir: str = "standards_library"):
+    def __init__(self, base_dir_name: str = "standards_library"):
         # In a serverless environment like Cloud Run, only /tmp is guaranteed to be writable.
-        # We check for the K_SERVICE environment variable, which is set by Cloud Run.
         if os.environ.get('K_SERVICE'):
-            self.base_dir = Path("/tmp") / base_dir
+            self.base_dir = Path("/tmp") / base_dir_name
+            self.library_file = self.base_dir / "library.json"
         else:
-            # Use local directory for local development
-            self.base_dir = Path(base_dir)
+            # For local development, find the project root and then the data directory.
+            project_root = Path(__file__).resolve().parent.parent
+            self.base_dir = project_root / base_dir_name
+            self.library_file = self.base_dir / "library.json"
 
-        self.library_file = self.base_dir / "library.json"
         self.backups_dir = self.base_dir / "backups"
         self.exports_dir = self.base_dir / "exports"
         self.max_backups = 5
@@ -34,12 +35,10 @@ class FileManager:
     
     def library_exists(self) -> bool:
         """Check if library file exists"""
-        # No need to ensure dirs exist just to check for a file.
-        return self.library_file.exists()
+        return self.library_file.exists() and self.library_file.is_file()
     
     def load_library(self) -> Optional[Library]:
         """Load library from JSON file"""
-        self._ensure_directories() # Ensure directory exists before trying to read.
         if not self.library_exists():
             return None
         
@@ -49,7 +48,7 @@ class FileManager:
             
             return self._dict_to_library(data)
         
-        except Exception as e:
+        except (json.JSONDecodeError, Exception) as e:
             print(f"Error loading library: {e}")
             return None
     
@@ -57,10 +56,7 @@ class FileManager:
         """Save library to JSON file"""
         self._ensure_directories()
         try:
-            # Update last_modified timestamp
             library.last_modified = datetime.now().isoformat()
-            
-            # Convert to dict and save
             data = library.to_dict()
             
             with open(self.library_file, 'w', encoding='utf-8') as f:
@@ -71,29 +67,23 @@ class FileManager:
         except Exception as e:
             print(f"Error saving library: {e}")
             return False
-    
-    def create_backup(self) -> bool:
+
+    def create_backup(self) -> Optional[str]:
         """Create a backup of current library"""
         self._ensure_directories()
         if not self.library_exists():
-            return False
+            return None
         
         try:
-            # Generate backup filename with timestamp
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
             backup_file = self.backups_dir / f"library_backup_{timestamp}.json"
-            
-            # Copy current library to backup
             shutil.copy2(self.library_file, backup_file)
-            
-            # Manage backup rotation (keep only max_backups)
             self._rotate_backups()
-            
-            return True
+            return backup_file.name
         
         except Exception as e:
             print(f"Error creating backup: {e}")
-            return False
+            return None
     
     def _rotate_backups(self):
         """Keep only the most recent max_backups backups"""
@@ -101,11 +91,10 @@ class FileManager:
                         key=lambda p: p.stat().st_mtime, 
                         reverse=True)
         
-        # Delete oldest backups if we exceed max_backups
         for old_backup in backups[self.max_backups:]:
             old_backup.unlink()
     
-    def list_backups(self) -> List[dict]:
+    def list_backups(self) -> List[Dict[str, Any]]:
         """List all available backups with metadata"""
         self._ensure_directories()
         backups = []
@@ -116,7 +105,7 @@ class FileManager:
             stat = backup_file.stat()
             backups.append({
                 "filename": backup_file.name,
-                "path": backup_file,
+                "path": str(backup_file),
                 "modified": datetime.fromtimestamp(stat.st_mtime).strftime("%Y-%m-%d %H:%M:%S"),
                 "size": stat.st_size
             })
@@ -132,7 +121,6 @@ class FileManager:
             return False
         
         try:
-            # Copy backup to main library file
             shutil.copy2(backup_path, self.library_file)
             return True
         
@@ -140,16 +128,43 @@ class FileManager:
             print(f"Error restoring backup: {e}")
             return False
     
+    def delete_backup_file(self, filename: str) -> bool:
+        """Deletes a specific backup file by its name."""
+        self._ensure_directories()
+        backup_path = self.backups_dir / filename
+        
+        # Security check to ensure we are only deleting from the backups directory
+        if backup_path.exists() and backup_path.parent == self.backups_dir:
+            try:
+                backup_path.unlink()
+                return True
+            except Exception as e:
+                print(f"Error deleting backup file {filename}: {e}")
+        return False
+
     def delete_all_backups(self) -> bool:
         """Delete all backup files"""
         self._ensure_directories()
         try:
-            for backup_file in self.backups_dir.glob("library_backup_*.json"):
-                backup_file.unlink()
+            if self.backups_dir.exists():
+                shutil.rmtree(self.backups_dir)
+                self.backups_dir.mkdir()
             return True
         
         except Exception as e:
             print(f"Error deleting backups: {e}")
+            return False
+
+    def restore_from_file_stream(self, file_stream) -> bool:
+        """Overwrites the main library file with content from a file stream."""
+        self._ensure_directories()
+        try:
+            # Save the stream content directly to the main library file
+            with open(self.library_file, 'wb') as f:
+                f.write(file_stream.read())
+            return True
+        except Exception as e:
+            print(f"Error restoring from file stream: {e}")
             return False
     
     def export_library(self, 
@@ -158,49 +173,34 @@ class FileManager:
                       cluster_ids: Optional[List[str]] = None,
                       standard_ids: Optional[List[str]] = None,
                       include_rationales: bool = False) -> bool:
-        """
-        Export library or subset to file
-        
-        Args:
-            library: Library to export
-            filename: Export filename
-            cluster_ids: If provided, only export standards from these clusters
-            standard_ids: If provided, only export these specific standards
-            include_rationales: Whether to include rationale fields
-        """
+        """Export library or subset to file"""
         self._ensure_directories()
         try:
             export_path = self.exports_dir / filename
             
-            # Create filtered library
             filtered_standards = library.standards
             
             if cluster_ids:
-                filtered_standards = [s for s in filtered_standards 
-                                     if s.cluster in cluster_ids]
+                filtered_standards = [s for s in filtered_standards if s.cluster in cluster_ids]
             
             if standard_ids:
-                filtered_standards = [s for s in filtered_standards 
-                                     if s.id in standard_ids]
+                filtered_standards = [s for s in filtered_standards if s.id in standard_ids]
             
-            # Build export data
             export_data = {
                 "version": library.version,
                 "exported": datetime.now().isoformat(),
                 "clusters": [c.to_dict() for c in library.clusters],
-                "standards": []
             }
             
+            # Convert standards to dicts and then filter rationales if needed
+            standards_as_dicts = []
             for std in filtered_standards:
                 std_dict = std.to_dict()
-                
-                # Remove rationales if not needed (for runtime use)
                 if not include_rationales:
-                    del std_dict["rationale"]
-                
-                export_data["standards"].append(std_dict)
-            
-            # Save export file
+                    del std_dict['rationale']
+                standards_as_dicts.append(std_dict)
+            export_data["standards"] = standards_as_dicts
+
             with open(export_path, 'w', encoding='utf-8') as f:
                 json.dump(export_data, f, indent=2, ensure_ascii=False)
             
@@ -217,58 +217,14 @@ class FileManager:
             last_modified=data.get("last_modified", "")
         )
         
-        # Load clusters
-        for cluster_data in data.get("clusters", []):
-            cluster = Cluster(
-                id=cluster_data["id"],
-                name=cluster_data["name"],
-                description=cluster_data.get("description", ""),
-                order=cluster_data.get("order", 0)
-            )
-            library.clusters.append(cluster)
+        library.clusters = [Cluster(**c) for c in data.get("clusters", [])]
         
-        # Load standards
         for std_data in data.get("standards", []):
-            # Parse MAC vector
-            mac_data = std_data.get("mac_vector", {})
-            mac_vector = MACVector(
-                family=mac_data.get("family", 0.0),
-                group=mac_data.get("group", 0.0),
-                reciprocity=mac_data.get("reciprocity", 0.0),
-                heroism=mac_data.get("heroism", 0.0),
-                deference=mac_data.get("deference", 0.0),
-                fairness=mac_data.get("fairness", 0.0),
-                property=mac_data.get("property", 0.0)
-            )
-            
-            # Parse rationale
-            rat_data = std_data.get("rationale", {})
-            rationale = MACRationale(
-                family_rationale=rat_data.get("family_rationale", ""),
-                group_rationale=rat_data.get("group_rationale", ""),
-                reciprocity_rationale=rat_data.get("reciprocity_rationale", ""),
-                heroism_rationale=rat_data.get("heroism_rationale", ""),
-                deference_rationale=rat_data.get("deference_rationale", ""),
-                fairness_rationale=rat_data.get("fairness_rationale", ""),
-                property_rationale=rat_data.get("property_rationale", "")
-            )
-            
-            standard = Standard(
-                id=std_data["id"],
-                name=std_data["name"],
-                cluster=std_data["cluster"],
-                description=std_data.get("description", ""),
-                importance_weight=std_data.get("importance_weight", 0.5),
-                mac_vector=mac_vector,
-                primary_focus=std_data.get("primary_focus", ""),
-                secondary_focus=std_data.get("secondary_focus", ""),
-                impacted_emotions=std_data.get("impacted_emotions", []),
-                rationale=rationale,
-                date_created=std_data.get("date_created", ""),
-                date_modified=std_data.get("date_modified", "")
-            )
-            
-            library.standards.append(standard)
+            mac_vector = MACVector(**std_data.get("mac_vector", {}))
+            rationale = MACRationale(**std_data.get("rationale", {}))
+            std_data["mac_vector"] = mac_vector
+            std_data["rationale"] = rationale
+            library.standards.append(Standard(**std_data))
         
         return library
     
@@ -276,7 +232,6 @@ class FileManager:
         """Create a new empty library with default structure"""
         library = Library()
         
-        # Add default clusters (from v2.7 document)
         default_clusters = [
             Cluster("ENH", "Empathy & Non-Harm", "Standards establishing fundamental moral principle...", 1),
             Cluster("PAW", "Prosocial Action & Welfare", "Standards governing capacity to recognize opportunities...", 2),
@@ -296,5 +251,4 @@ class FileManager:
         ]
         
         library.clusters = default_clusters
-        
         return library
