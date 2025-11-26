@@ -15,7 +15,10 @@ class LibraryController:
     """Handles all business logic for managing the library."""
 
     def __init__(self):
-        self.file_manager = FileManager()
+        # Use an environment variable for the data path for robustness in containers.
+        # Default to the local relative path if the variable isn't set.
+        data_path = os.getenv("DATA_PATH", "standards_library")
+        self.file_manager = FileManager(data_path)
         self.library: Optional[Library] = self._load_initial_library()
 
     def _load_initial_library(self) -> Library:

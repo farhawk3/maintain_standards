@@ -16,9 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const createForm = document.getElementById("create-standard-form");
     const systemMenuBtn = document.getElementById("system-menu-btn");
     const systemMenuDropdown = document.getElementById("system-menu-dropdown");
-    const menuCreateStandard = document.getElementById("menu-create-standard"); // From menu
-    const menuEditClusters = document.getElementById("menu-edit-clusters"); // From menu
-    const menuBackupRestore = document.getElementById("menu-backup-restore"); // From menu
+    const menuCreateStandard = document.getElementById("menu-create-standard");
+    const menuEditClusters = document.getElementById("menu-edit-clusters");
+    const menuBackupRestore = document.getElementById("menu-backup-restore");
     const backupModal = document.getElementById("backup-modal");
     const closeBackupModalBtn = document.getElementById("close-backup-modal-btn");
     const backupList = document.getElementById("backup-list");
@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const filterModalConfirmBtn = document.getElementById("filter-modal-confirm-btn");
     const activeFilterDisplay = document.getElementById("active-filter-display");
     const searchInput = document.getElementById("search-input");
+    const userActions = document.getElementById("user-actions");
 
     // =================================================================================
     // --- State Management ---
@@ -377,7 +378,7 @@ document.addEventListener("DOMContentLoaded", () => {
      */
     async function fetchAndDisplayStandards() {
         try {
-            const response = await fetch("http://127.0.0.1:5000/api/standards");
+            const response = await fetch("/api/standards");
             const fetchedStandards = await response.json();
             allStandards = fetchedStandards.sort((a, b) => a.id.localeCompare(b.id)); // Sort once
 
@@ -400,7 +401,7 @@ document.addEventListener("DOMContentLoaded", () => {
      */
     async function fetchClusters() {
         try {
-            const response = await fetch("http://127.0.0.1:5000/api/clusters");
+            const response = await fetch("/api/clusters");
             allClusters = await response.json();
             allClusters.sort((a, b) => a.order - b.order); // Sort clusters by order
             clusterCountElement.textContent = `Clusters: ${allClusters.length}`;
@@ -593,7 +594,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (isConfirmed) {
             try {
-                const response = await fetch(`http://127.0.0.1:5000/api/standards/${currentlySelectedStandard.id}`, {
+                const response = await fetch(`/api/standards/${currentlySelectedStandard.id}`, {
                     method: 'DELETE',
                 });
 
@@ -642,6 +643,28 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    /**
+     * Displays a modal alert with a message.
+     * @param {string} message - The message to display.
+     * @param {string} [title="Alert"] - The title of the alert.
+     * @returns {Promise<void>}
+     */
+    function showAlert(message, title = "Alert") {
+        return new Promise((resolve) => {
+            // Check if title element exists, if not just skip title update
+            const titleEl = document.getElementById('alert-modal-title');
+            if (titleEl) titleEl.textContent = title;
+
+            alertModalMessage.innerHTML = message;
+            alertModal.classList.remove('hidden');
+
+            alertModalOkBtn.onclick = () => {
+                alertModal.classList.add('hidden');
+                resolve();
+            };
+        });
+    }
+
     saveBtn.addEventListener('click', async () => {
         if (!currentlySelectedStandard) return;
 
@@ -671,7 +694,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // --- Send the data to the backend ---
         try {
-            const response = await fetch(`http://127.0.0.1:5000/api/standards/${currentlySelectedStandard.id}`, {
+            const response = await fetch(`/api/standards/${currentlySelectedStandard.id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -702,7 +725,7 @@ document.addEventListener("DOMContentLoaded", () => {
             displayStandardDetails(savedStandard.id, 'view');
 
         } catch (error) {
-            alert(`Save failed: ${error.message}`);
+            await showAlert(`Save failed: ${error.message}`, "Error");
         }
     });
 
@@ -757,7 +780,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         try {
-            const response = await fetch(`http://127.0.0.1:5000/api/standards`, {
+            const response = await fetch(`/api/standards`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -787,14 +810,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-
     /**
      * Fetches the list of available backup files from the server and renders them.
      * @returns {Promise<void>}
      */
     async function refreshBackupList() {
         try {
-            const response = await fetch('http://127.0.0.1:5000/api/backups');
+            const response = await fetch('/api/backups');
             const files = await response.json();
             backupList.innerHTML = '';
             if (files.length === 0) {
@@ -805,7 +827,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     li.innerHTML = `
                         <span>${file}</span>
                         <div class="backup-actions">
-                            <a href="http://127.0.0.1:5000/api/backups/${file}" download title="Download backup" class="backup-action-btn download-btn">⬇️</a>
+                            <a href="/api/backups/${file}" download title="Download backup" class="backup-action-btn download-btn">⬇️</a>
                             <button title="Restore from this backup" class="backup-action-btn restore-backup-btn" data-filename="${file}">↩️</button>
                             <button title="Delete backup" class="backup-action-btn delete-backup-btn" data-filename="${file}">🗑️</button>
                         </div>
@@ -829,7 +851,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     document.getElementById('create-backup-btn').addEventListener('click', async () => {
         try {
-            const response = await fetch('http://127.0.0.1:5000/api/backup', { method: 'POST' });
+            const response = await fetch('/api/backup', { method: 'POST' });
             const data = await response.json();
             if (!response.ok) throw new Error(data.message);
             await showAlert(`Backup created successfully: ${data.filename}`, "Backup Complete");
@@ -846,7 +868,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (isConfirmed) {
                 try {
-                    const response = await fetch(`http://127.0.0.1:5000/api/backups/${filename}`, { method: 'DELETE' });
+                    const response = await fetch(`/api/backups/${filename}`, { method: 'DELETE' });
                     if (!response.ok) throw new Error('Failed to delete backup.');
                     refreshBackupList();
                 } catch (error) {
@@ -859,7 +881,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const isConfirmed = await showConfirmation(`WARNING: This will overwrite the entire current library with the contents of the backup "${filename}". This action cannot be undone. Are you absolutely sure?`);
             if (isConfirmed) {
                 try {
-                    const response = await fetch(`http://127.0.0.1:5000/api/restore/${filename}`, { method: 'POST' });
+                    const response = await fetch(`/api/restore/${filename}`, { method: 'POST' });
                     if (!response.ok) {
                         const errorData = await response.json();
                         throw new Error(errorData.message || 'Restore failed.');
@@ -945,7 +967,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/api/export', {
+            const response = await fetch('/api/export', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(exportOptions),
@@ -993,7 +1015,7 @@ document.addEventListener("DOMContentLoaded", () => {
         formData.append('import_file', file);
 
         try {
-            const response = await fetch('http://127.0.0.1:5000/api/import', {
+            const response = await fetch('/api/import', {
                 method: 'POST',
                 body: formData,
             });
@@ -1113,7 +1135,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const method = (mode === 'create') ? 'POST' : 'PUT';
 
         try {
-            const response = await fetch(`http://127.0.0.1:5000${url}`, {
+            const response = await fetch(`${url}`, {
                 method: method,
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(clusterData)
@@ -1137,7 +1159,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isConfirmed = await showConfirmation(`Are you sure you want to delete cluster "${clusterId}"? This cannot be undone.`);
         if (isConfirmed) {
             try {
-                const response = await fetch(`http://127.0.0.1:5000/api/clusters/${clusterId}`, { method: 'DELETE' });
+                const response = await fetch(`/api/clusters/${clusterId}`, { method: 'DELETE' });
                 const result = await response.json();
                 if (!response.ok) throw new Error(result.message);
                 await renderClusterMaintenanceList(); // Refresh the list
@@ -1158,17 +1180,42 @@ document.addEventListener("DOMContentLoaded", () => {
     // =================================================================================
 
     /**
+     * Checks if the user is logged in and updates the UI accordingly.
+     */
+    async function checkUserStatus() {
+        try {
+            const response = await fetch('/api/user');
+            const data = await response.json();
+            if (data.user) {
+                userActions.innerHTML = `
+                    <span style="margin-right: 10px;">Welcome, ${data.user.email} (${data.role || 'User'})</span>
+                    <a href="/logout" class="btn">Logout</a>
+                `;
+                // Load data only if logged in
+                await fetchClusters();
+                await fetchAndDisplayStandards();
+                // After data is loaded, select the first standard in the list by default
+                if (allStandards.length > 0) {
+                    displayStandardDetails(allStandards[0].id);
+                }
+            } else {
+                userActions.innerHTML = `<a href="/login" class="btn">Login with Google</a>`;
+                standardsListElement.innerHTML = "<li>Please login to view standards.</li>";
+                clusterCountElement.textContent = "Clusters: 0";
+                standardCountElement.textContent = "Standards: 0";
+            }
+        } catch (error) {
+            console.error("Failed to check user status:", error);
+            userActions.innerHTML = `<a href="/login" class="btn">Login with Google</a>`;
+        }
+    }
+
+    /**
      * Initializes the application by fetching all necessary data and rendering the initial view.
      * @returns {Promise<void>}
      */
     async function initializeApp() {
-        await fetchClusters();
-        await fetchAndDisplayStandards();
-
-        // After data is loaded, select the first standard in the list by default
-        if (allStandards.length > 0) {
-            displayStandardDetails(allStandards[0].id);
-        }
+        await checkUserStatus();
     }
 
     // --- Set up global event listeners that only need to be attached once ---

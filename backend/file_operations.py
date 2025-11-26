@@ -12,17 +12,10 @@ from models import Library, Standard, Cluster, MACVector, MACRationale
 class FileManager:
     """Manages all file operations for the library"""
     
-    def __init__(self, base_dir_name: str = "standards_library"):
-        # In a serverless environment like Cloud Run, only /tmp is guaranteed to be writable.
-        if os.environ.get('K_SERVICE'):
-            self.base_dir = Path("/tmp") / base_dir_name
-            self.library_file = self.base_dir / "library.json"
-        else:
-            # For local development, find the project root and then the data directory.
-            project_root = Path(__file__).resolve().parent.parent
-            self.base_dir = project_root / base_dir_name
-            self.library_file = self.base_dir / "library.json"
-
+    def __init__(self, data_path: str):
+        # Directly use the path provided by the controller.
+        self.base_dir = Path(data_path)
+        self.library_file = self.base_dir / "library.json"
         self.backups_dir = self.base_dir / "backups"
         self.exports_dir = self.base_dir / "exports"
         self.max_backups = 5

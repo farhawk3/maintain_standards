@@ -1,6 +1,6 @@
 {
   "version": "2.7",
-  "last_modified": "2025-11-21T15:27:43.356823",
+  "last_modified": "2025-11-21T19:45:06.347119",
   "clusters": [
     {
       "id": "ENH",
@@ -234,26 +234,23 @@
         "reciprocity": 0.45,
         "heroism": 0.05,
         "deference": 0.2,
-        "fairness": 0.0,
-        "property": 0.0
+        "fairness": 0,
+        "property": 0
       },
       "primary_focus": "Action",
       "secondary_focus": "Object/Concept",
-      "impacted_emotions": [
-        "Agency",
-        "Expectation"
-      ],
+      "impacted_emotions": [],
       "rationale": {
-        "family_rationale": "**Minimal**: While one can be professional in a family business, the concept is primarily about one's role in a broader social or economic context.  ",
-        "group_rationale": "**Strong**: A team of diligent professionals is far more effective and reliable. This standard is crucial for the functioning of any high-performing **group**.  ",
-        "reciprocity_rationale": "**Dominant**: Professionalism is a cornerstone of **Reciprocity** in any service-based exchange. The client or employer pays for a service with the trusted expectation that the provider is competent and diligent. Negligence is a severe violation of this trust.  ",
-        "heroism_rationale": "**Minimal**: While a professional can be a \"hero,\" the core of this standard is about duty, diligence, and reliability, not displays of status.  ",
-        "deference_rationale": "**Strong**: This standard requires **deference** to professional codes of conduct, the expectations of one's role, and the standards of one's field.  ",
-        "fairness_rationale": "**None**: This is about fulfilling a specific role competently, not about impartiality.  ",
-        "property_rationale": "**None**: Unrelated to ownership."
+        "family_rationale": "***Minimal*** - While one can be professional in a family business, the concept is primarily about one's role in a broader social or economic context.  ",
+        "group_rationale": "***Strong*** - A team of diligent professionals is far more effective and reliable. This standard is crucial for the functioning of any high-performing **group**.  ",
+        "reciprocity_rationale": "***Dominant*** - Professionalism is a cornerstone of **Reciprocity** in any service-based exchange. The client or employer pays for a service with the trusted expectation that the provider is competent and diligent. Negligence is a severe violation of this trust.  ",
+        "heroism_rationale": "***Minimal*** - While a professional can be a \"hero,\" the core of this standard is about duty, diligence, and reliability, not displays of status.  ",
+        "deference_rationale": "***Strong*** - This standard requires **deference** to professional codes of conduct, the expectations of one's role, and the standards of one's field.  ",
+        "fairness_rationale": "***None*** - This is about fulfilling a specific role competently, not about impartiality.  ",
+        "property_rationale": "***None*** - Unrelated to ownership."
       },
       "date_created": "2025-01-20",
-      "date_modified": "2025-11-18"
+      "date_modified": "2025-11-21"
     },
     {
       "id": "CD-3",

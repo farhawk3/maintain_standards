@@ -1,35 +1,41 @@
-# Dockerfile for the Moral Standards Manager Application
+# Dockerfile for the Standards Library Application
+# Simplified single-stage build for debugging.
 
-# --- Stage 1: Build the Python Backend ---
+# Use an official Python 3.9 slim image as the base.
 FROM python:3.9-slim
 
 # Set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
 
-# Set the working directory
+# Set the working directory inside the container.
 WORKDIR /app
 
-# Copy only the requirements file to leverage layer caching
-COPY backend/requirements.txt .
+# Copy requirements and install dependencies
+# Copy requirements first to leverage cache
+COPY backend/requirements.txt /app/backend/requirements.txt
+RUN pip install --no-cache-dir -r /app/backend/requirements.txt
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+# Copy application code (Backend and Frontend)
+COPY backend/ /app/backend/
+COPY frontend/ /app/frontend/
+COPY entrypoint.sh /app/
 
-# Copy the backend application code
-COPY backend/ .
+# Copy the data directory
+COPY standards_library/ /app/standards_library/
 
-# --- Stage 2: Use a production-ready web server (Caddy) to serve both frontend and backend ---
-FROM caddy:2-alpine
+# Set the absolute path to the data directory inside the container.
+# We point to /tmp/standards_library because Cloud Run filesystem is read-only
+ENV DATA_PATH=/tmp/standards_library
 
-# Copy the built backend from the previous stage
-COPY --from=0 /app /app
+# Make entrypoint executable
+RUN chmod +x /app/entrypoint.sh
 
-# Copy the frontend files
-COPY frontend/ /srv/
-
-# Copy the Caddyfile configuration
-COPY Caddyfile /etc/caddy/Caddyfile
-
-# Expose the port Caddy listens on (Google Cloud Run uses 8080 by default)
+# Tell Cloud Run that the container will listen on port 8080.
 EXPOSE 8080
+
+# Define the entrypoint
+ENTRYPOINT ["/app/entrypoint.sh"]
+
+# Run Gunicorn from the backend directory
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "--chdir", "backend", "app:app"]
