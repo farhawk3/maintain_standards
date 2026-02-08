@@ -3,13 +3,15 @@
 LibraryController: The business logic core for the Standards Library.
 This class is independent of any UI framework.
 """
-import os
-import json
-from datetime import datetime
-from typing import Optional, Dict, Any
 
-from models import Library, Standard, Cluster, MACVector, MACRationale
+import json
+import os
+from datetime import datetime
+from typing import Any, Dict, Optional
+
 from file_operations import FileManager
+from models import Cluster, Library, MACRationale, MACVector, Standard
+
 
 class LibraryController:
     """Handles all business logic for managing the library."""
@@ -27,7 +29,7 @@ class LibraryController:
             library = self.file_manager.load_library()
             if library:
                 return library
-        
+
         # If no library exists or loading fails, create and save an empty one.
         empty_library = self.file_manager.create_empty_library()
         self.file_manager.save_library(empty_library)
@@ -38,9 +40,7 @@ class LibraryController:
         return self.library.version if self.library else "N/A"
 
     def get_all_standards(self) -> list[dict]:
-        """
-        Returns a list of all standards, converted to dictionaries for JSON serialization.
-        """
+        """Returns all standards as dictionaries for JSON serialization."""
         if not self.library:
             return []
         return [std.to_dict() for std in self.library.standards]
@@ -60,20 +60,23 @@ class LibraryController:
         if not self.library:
             # This should ideally not happen if the controller is initialized properly
             raise Exception("Library not loaded. Cannot create standard.")
-        
+
         standard_id = data.get("id")
         if not standard_id:
             raise ValueError("Standard ID is a required field.")
 
         # --- Validation: Check for uniqueness ---
-        existing_ids = {std['id'] for std in self.get_all_standards()}
+        existing_ids = {std["id"] for std in self.get_all_standards()}
         if standard_id in existing_ids:
-            raise ValueError(f"Standard ID '{standard_id}' already exists. Please choose a unique ID.")
+            raise ValueError(
+                f"Standard ID '{standard_id}' already exists."
+                " Please choose a unique ID."
+            )
 
         cluster_id = data.get("cluster")
         if not cluster_id:
             raise ValueError("Cluster ID is required to create a standard.")
-            
+
         # Create a new Standard object from the incoming data
         new_standard = Standard(
             id=standard_id,
@@ -89,26 +92,28 @@ class LibraryController:
                 heroism=0.0,
                 deference=0.0,
                 fairness=0.0,
-                property=0.0
+                property=0.0,
             ),
             primary_focus="Object/Concept",
             secondary_focus="Action",
             impacted_emotions=[],
-            rationale=MACRationale(), # Assumes default empty strings in model
+            rationale=MACRationale(),  # Assumes default empty strings in model
             date_created=datetime.now().strftime("%Y-%m-%d"),
-            date_modified=datetime.now().strftime("%Y-%m-%d")
+            date_modified=datetime.now().strftime("%Y-%m-%d"),
         )
-        
+
         # Add the new standard to the library's main list of standards
         self.library.standards.append(new_standard)
-        
+
         # Save the updated library back to the JSON file
         self.file_manager.save_library(self.library)
 
         # Return the new standard's data so the frontend can confirm creation
         return new_standard.to_dict()
 
-    def update_standard(self, standard_id: str, form_data: Dict[str, Any]) -> Dict[str, Any]:
+    def update_standard(
+        self, standard_id: str, form_data: Dict[str, Any]
+    ) -> Dict[str, Any]:
         """
         Finds a standard by its ID, validates the incoming data,
         updates the standard, saves the library, and returns the updated standard.
@@ -118,14 +123,18 @@ class LibraryController:
             raise ValueError(f"Could not find standard {standard_id} to save.")
 
         # --- Validation ---
-        # Pydantic will validate the structure of mac_vector and rationale upon object creation
+        # Validate mac_vector and rationale structure upon creation
         new_mac_vector = MACVector(**form_data.get("mac_vector", {}))
         if not new_mac_vector.is_valid():
             raise ValueError("Save failed: MAC vector must sum to 1.0.")
 
-        importance_weight = float(form_data.get("importance_weight", std.importance_weight))
+        importance_weight = float(
+            form_data.get("importance_weight", std.importance_weight)
+        )
         if not (0.0 <= importance_weight <= 1.0):
-            raise ValueError("Save failed: Importance Weight must be between 0.0 and 1.0.")
+            raise ValueError(
+                "Save failed: Importance Weight must be between 0.0 and 1.0."
+            )
 
         # --- Update the standard object ---
         std.name = form_data.get("name", std.name)
@@ -133,7 +142,9 @@ class LibraryController:
         std.importance_weight = importance_weight
         std.primary_focus = form_data.get("primary_focus", std.primary_focus)
         std.secondary_focus = form_data.get("secondary_focus", std.secondary_focus)
-        std.impacted_emotions = form_data.get("impacted_emotions", std.impacted_emotions)
+        std.impacted_emotions = form_data.get(
+            "impacted_emotions", std.impacted_emotions
+        )
         std.cluster = form_data.get("cluster", std.cluster)
         std.mac_vector = new_mac_vector
         std.rationale = MACRationale(**form_data.get("rationale", {}))
@@ -148,12 +159,14 @@ class LibraryController:
         Returns True on success, False if the standard was not found.
         """
         initial_length = len(self.library.standards)
-        self.library.standards = [s for s in self.library.standards if s.id != standard_id]
-        
+        self.library.standards = [
+            s for s in self.library.standards if s.id != standard_id
+        ]
+
         if len(self.library.standards) < initial_length:
             self.file_manager.save_library(self.library)
             return True
-        
+
         return False
 
     def create_backup(self) -> str:
@@ -169,7 +182,7 @@ class LibraryController:
     def get_backup_files(self) -> list[str]:
         """Returns a list of existing backup filenames."""
         backups = self.file_manager.list_backups()
-        return [b['filename'] for b in backups]
+        return [b["filename"] for b in backups]
 
     def delete_backup_file(self, filename: str) -> bool:
         """Delegates the deletion of a specific backup file to the FileManager."""
@@ -181,7 +194,7 @@ class LibraryController:
         """
         # DELEGATE to the FileManager.
         if self.file_manager.restore_from_file_stream(file_stream):
-            self.library = self._load_initial_library() # Reload the library in memory
+            self.library = self._load_initial_library()  # Reload the library in memory
             return True
         return False
 
@@ -190,7 +203,7 @@ class LibraryController:
         Restores the library from a specific backup filename on the server.
         """
         if self.file_manager.restore_backup(filename):
-            self.library = self._load_initial_library() # Reload the library in memory
+            self.library = self._load_initial_library()  # Reload the library in memory
             return True
         return False
 
@@ -205,28 +218,36 @@ class LibraryController:
         filtered_standards = self.library.standards
 
         if export_options.get("cluster_ids"):
-            filtered_standards = [s for s in filtered_standards if s.cluster in export_options["cluster_ids"]]
-        
+            filtered_standards = [
+                s
+                for s in filtered_standards
+                if s.cluster in export_options["cluster_ids"]
+            ]
+
         if export_options.get("standard_ids"):
-            filtered_standards = [s for s in filtered_standards if s.id in export_options["standard_ids"]]
+            filtered_standards = [
+                s for s in filtered_standards if s.id in export_options["standard_ids"]
+            ]
 
         standards_as_dicts = []
         for std in filtered_standards:
             std_dict = std.to_dict()
             if not export_options.get("include_rationales", True):
-                del std_dict['rationale']
+                del std_dict["rationale"]
             standards_as_dicts.append(std_dict)
 
         return {
             "version": self.library.version,
             "exported": datetime.now().isoformat(),
             "clusters": [c.to_dict() for c in self.library.clusters],
-            "standards": standards_as_dicts
+            "standards": standards_as_dicts,
         }
 
     # --- Cluster Maintenance ---
 
-    def _reorder_clusters(self, target_order: int, cluster_to_exclude_id: Optional[str] = None):
+    def _reorder_clusters(
+        self, target_order: int, cluster_to_exclude_id: Optional[str] = None
+    ):
         """Shifts cluster orders to make room for a new or updated cluster."""
         for cluster in self.library.clusters:
             if cluster.id == cluster_to_exclude_id:
@@ -249,7 +270,7 @@ class LibraryController:
             id=new_id,
             name=data.get("name", "New Cluster"),
             description=data.get("description", ""),
-            order=new_order
+            order=new_order,
         )
         self.library.clusters.append(new_cluster)
         self.library.clusters.sort(key=lambda c: c.order)
@@ -258,7 +279,9 @@ class LibraryController:
 
     def update_cluster(self, cluster_id: str, data: Dict[str, Any]) -> Dict[str, Any]:
         """Updates an existing cluster's details."""
-        cluster_to_update = next((c for c in self.library.clusters if c.id == cluster_id), None)
+        cluster_to_update = next(
+            (c for c in self.library.clusters if c.id == cluster_id), None
+        )
         if not cluster_to_update:
             raise ValueError(f"Cluster '{cluster_id}' not found.")
 
@@ -267,7 +290,9 @@ class LibraryController:
             self._reorder_clusters(new_order, cluster_to_exclude_id=cluster_id)
 
         cluster_to_update.name = data.get("name", cluster_to_update.name)
-        cluster_to_update.description = data.get("description", cluster_to_update.description)
+        cluster_to_update.description = data.get(
+            "description", cluster_to_update.description
+        )
         cluster_to_update.order = new_order
 
         self.library.clusters.sort(key=lambda c: c.order)
@@ -276,13 +301,21 @@ class LibraryController:
 
     def delete_cluster(self, cluster_id: str):
         """Deletes a cluster if it is not in use."""
-        standards_using_cluster = [s.id for s in self.library.standards if s.cluster == cluster_id]
+        standards_using_cluster = [
+            s.id for s in self.library.standards if s.cluster == cluster_id
+        ]
         if standards_using_cluster:
-            raise ValueError(f"Cannot delete cluster '{cluster_id}' because it is in use by {len(standards_using_cluster)} standard(s).")
+            raise ValueError(
+                f"Cannot delete cluster '{cluster_id}' because"
+                f" it is in use by {len(standards_using_cluster)}"
+                " standard(s)."
+            )
 
-        cluster_to_delete = next((c for c in self.library.clusters if c.id == cluster_id), None)
+        cluster_to_delete = next(
+            (c for c in self.library.clusters if c.id == cluster_id), None
+        )
         if not cluster_to_delete:
-            # This case should ideally not be hit if called from a valid UI, but it's good practice.
+            # Not expected from a valid UI, but good practice.
             return
 
         deleted_order = cluster_to_delete.order
@@ -328,7 +361,8 @@ class LibraryController:
             if cluster_id not in existing_cluster_ids:
                 report["standards_skipped"] += 1
                 report["skipped_reasons"].append(
-                    f"Standard '{standard_id}' skipped: Cluster '{cluster_id}' does not exist."
+                    f"Standard '{standard_id}' skipped:"
+                    f" Cluster '{cluster_id}' does not exist."
                 )
                 continue
 
@@ -347,7 +381,9 @@ class LibraryController:
         try:
             import_data = json.load(file_stream)
         except (json.JSONDecodeError, UnicodeDecodeError):
-            raise ValueError("Invalid JSON file. Please ensure the file is a valid JSON.")
+            raise ValueError(
+                "Invalid JSON file. Please ensure the file is a valid JSON."
+            )
 
         report = {
             "clusters_added": 0,
@@ -355,7 +391,7 @@ class LibraryController:
             "standards_added": 0,
             "standards_updated": 0,
             "standards_skipped": 0,
-            "skipped_reasons": []
+            "skipped_reasons": [],
         }
 
         # --- Pass 1: Synchronize Clusters ---

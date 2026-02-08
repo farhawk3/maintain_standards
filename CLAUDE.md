@@ -92,6 +92,15 @@ pytest -v
 
 Note: Test coverage is currently minimal (single placeholder test in `tests/test_example.py`).
 
+### CI/CD
+
+GitHub Actions runs automatically on pushes to `main` and on pull requests targeting `main`. The workflow (`.github/workflows/ci.yml`) has two parallel jobs:
+
+- **Lint & Format**: Runs `black --check backend/` and `ruff check backend/`
+- **Test**: Runs `pytest -v`
+
+Both must pass for PRs to be mergeable.
+
 ## Code Style and Conventions
 
 ### Python (Backend)
